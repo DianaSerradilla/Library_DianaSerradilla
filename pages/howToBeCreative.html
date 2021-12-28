@@ -21,7 +21,7 @@
     rel="stylesheet">
 </head>
 
-<body>
+<body class="presentation__books">
   <!-- ----------------Nav init---------------- -->
   <header id="header">
     <div class="nav">
@@ -42,11 +42,12 @@
       </div>
       <div class="nav__title">
         <a href="../index.html">
-          <h2>Library</h2>
+          <h2 class="title__hidden">LB</h2>
+          <h2 class="title__nhidden">Library</h2>
         </a>
       </div>
       <div class="nav__box">
-        <input class="nav__box--search" type="text" name="" placeholder="Type...">
+        <input class="nav__box--search" type="text" name="">
         <a href="#"><i class="fas fa-search nav__box--btn"></i></a>
       </div>
     </div>
@@ -56,7 +57,9 @@
   <main class="intro" id="intro__pages">
     <div class="intro__box">
       <h1 class="intro__title">HOW TO BE CREATIVE</h1>
-      <p class="intro__description">MacLeod, an advertising executive and popular blogger with a flair for the creative,
+      <p class="intro__description" id="description__books">MacLeod, an advertising executive and popular blogger with a
+        flair
+        for the creative,
         gives his 26 tried-and-true tips
         for being truly creative.</p>
     </div>
@@ -67,7 +70,7 @@
 
   <!-- ----------------Presentation Init---------------- -->
 
-  <section class="presentation">
+  <section class="presentation" id="presentation">
     <figure>
       <img src="../assets/img-how.jpg" alt="">
     </figure>
@@ -94,7 +97,7 @@
       </div>
     </div>
   </section>
-  <section class="captures">
+  <section class="captures" id="captures">
     <figure>
       <img src="../assets/img-how1.jpg" alt="">
     </figure>
@@ -104,15 +107,16 @@
     <figure>
       <img src="../assets/img-how3.jpg" alt="">
     </figure>
-    <div><a class="buttons_internal" href="designBooks.html">Go back</a></div>
+    <div><a class="buttons_internal" id="button__return" href="designBooks.html">Return</a></div>
     </div>
   </section>
 
-  <hr>
 
-  <section class="inner">
+  <section class="inner" id="books_section">
+    <hr>
+
     <div class="inner__cards--container">
-      <div class="inner__title">
+      <div class="inner__title" id="tittle__other">
         <a href="designBooks.html" target="_blank">Other books</a>
       </div>
       <ul class="inner__cards--ul">
