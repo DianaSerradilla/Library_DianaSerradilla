@@ -19,6 +19,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300&family=Oswald:wght@400;500;700&family=Playfair+Display:wght@400;700&family=Poppins&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -29,7 +30,7 @@
             <div class="nav">
                 <div class="nav__menu">
                     <input type="checkbox" id="nav" class="hidden">
-                    <label for="nav" class="nav__menu--btn">
+                    <label for="nav" class="nav__menu--btn animate__animated  animate__backInLeft">
                         <i class="fas fa-bars nav__menu--btn-i"></i>
                     </label>
                     <nav class="nav__menu--items">
@@ -44,21 +45,21 @@
                 </div>
                 <div class="nav__title">
                     <a href="index.html">
-                        <h2 class="title__hidden">LB</h2>
-                        <h2 class="title__nhidden">Library</h2>
+                        <h2 class="title__hidden animate__animated animate__backInDown">LB</h2>
+                        <h2 class="title__nhidden animate__animated animate__backInDown">Library</h2>
                     </a>
                 </div>
-                <div class="nav__box">
-                    <input class="nav__box--search" type="text" name="">
+                <div class="nav__box animate__animated  animate__backInRight">
+                    <input class="nav__box--search " type="text" name="search">
                     <a href="#"><i class="fas fa-search nav__box--btn"></i></a>
                 </div>
             </div>
         </header>
         <!-- ----------------Nav end---------------- -->
         <!-- ----------------Main init---------------- -->
-        <main class="intro" id="intro__index">
+        <main class="intro animate__animated animate__fadeIn" id="intro__index">
             <div class="intro__box">
-                <h1 class="intro__title">LIBRARY</h1>
+                <h1 class="intro__title ">LIBRARY</h1>
                 <p class="intro__description">graphics resources and code snippets</p>
             </div>
             <p class="intro__date">13 de dicembre 2021</p>
@@ -67,10 +68,10 @@
         <!-- ----------------Main End---------------- -->
         <!-- ----------------Collections init---------------- -->
         <section class="inner">
-            <div class="inner__title">
+            <div class="inner__title animate__animated animate__fadeInLeftBig">
                 <a href="pages/collections.html">Collections</a>
             </div>
-            <div class="inner__cards--container">
+            <div class="inner__cards--container animate__animated animate__fadeInRightBig">
                 <ul class="inner__cards--ul">
                     <li>
                         <figure>
@@ -135,10 +136,10 @@
 
             <!-- ----------------Education init---------------- -->
 
-            <div class="inner__title">
+            <div class="inner__title animate__animated animate__fadeInLeftBig">
                 <a href="pages/education.html">Education channels</a>
             </div>
-            <div class="inner__cards--container">
+            <div class="inner__cards--container animate__animated animate__fadeInRightBig">
                 <ul class="inner__cards--ul">
                     <li>
                         <figure>
@@ -210,10 +211,10 @@
 
             <!-- ----------------Books init---------------- -->
 
-            <div class="inner__title">
+            <div class="inner__title animate__animated animate__fadeInLeftBig">
                 <a href="pages/books.html">Books</a>
             </div>
-            <div class="cards-container">
+            <div class="cards-container animate__animated animate__fadeInRightBig">
                 <ul class="inner__cards--ul">
                     <li>
 
@@ -281,10 +282,10 @@
             <hr>
             <!-- ----------------Books end---------------- -->
             <!-- ----------------Resources init---------------- -->
-            <div class="inner__title">
-                <a href="pages/resources.html" target="_blank">Resources pages</a>
+            <div class="inner__title animate__animated animate__fadeInLeftBig">
+                <a href="pages/resources.html">Resources pages</a>
             </div>
-            <div class="cards-container">
+            <div class="cards-container animate__animated animate__fadeInRightBig">
                 <ul class="inner__cards--ul">
                     <li>
 
@@ -351,10 +352,12 @@
             </div>
         </section>
 
+
         <!-- ----------------Resources end---------------- -->
 
         <!-- ----------------Contact init---------------- -->
-        <div class="container__contact">
+
+        <div class="container__contact animate__animated animate__fadeInUp">
             <section id="contact">
                 <div class="contact__social">
                     <a href="https://www.instagram.com/laddy___di/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -387,7 +390,7 @@
         <!-- ----------------Footer init---------------- -->
         <section>
             <footer>
-                <div class="footer-copy">
+                <div class="footer-copy animate__animated animate__fadeInUp">
                     <p>© Copyright. All Rights Reserved
                         Designed by DianaSerradilla</p>
                 </div>
