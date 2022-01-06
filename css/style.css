@@ -1734,7 +1734,8 @@ footer {
   height: 50px;  
   width: 100%;
   bottom: 0;  
-  /* position: absolute; */
+  position: relative;
+  z-index: 99999;
   /* -------------grid------------ */
   grid-area: footer;
 }
