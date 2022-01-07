@@ -1845,7 +1845,8 @@ footer {
 .buttons_internal:active {
   top: 0px;
   box-shadow: 0px 0px 0px rgba(15, 165, 60, 0);
-  background: #fdfdfd;
+   background: rgb(12, 12, 12);
+
 }
 #button__return {
   margin-top: 30px;
