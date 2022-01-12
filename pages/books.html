@@ -2,204 +2,205 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books | Diana Serradilla</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="https://kit.fontawesome.com/8154432079.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="../assets/library-favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300&family=Playfair+Display:wght@400;700&family=Poppins&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300&family=Oswald:wght@400;500;700&family=Playfair+Display:wght@400;700&family=Poppins&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books | Diana Serradilla</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- --------------------------css vanilla---------------------------------- -->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- --------------------------icons---------------------------------- -->
+  <script src="https://kit.fontawesome.com/8154432079.js" crossorigin="anonymous"></script>
+  <!-- --------------------------favicon---------------------------------- -->
+  <link rel="icon" type="image/x-icon" href="/assets/library-favicon.ico">
 </head>
 
 <body>
-    <div class="father__container">
+  <div class="container-fluid">
+    <!-- ---------------------------------navbar init----------------------------------------- -->
+    <div class="row">
+      <nav class="navbar navbar-light bg-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html" id="nav__tittle">LIBRARY</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
 
-        <!-- ----------------Nav init---------------- -->
-        <header id="header">
-            <div class="nav">
-                <div class="nav__menu">
-                    <input type="checkbox" id="nav" class="hidden">
-                    <label for="nav" class="nav__menu--btn animate__animated  animate__backInLeft">
-                        <i class="fas fa-bars nav__menu--btn-i"></i>
-                    </label>
-                    <nav class="nav__menu--items">
-                        <ul>
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="collections.html">Collections</a></li>
-                            <li><a href="education.html">Education Channels</a></li>
-                            <li><a href="books.html">Books</a></li>
-                            <li><a href="resources.html">Resources pages</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="nav__title">
-                    <a href="../index.html">
-                        <h2 class="title__hidden animate__animated animate__backInDown">LB</h2>
-                        <h2 class="title__nhidden animate__animated animate__backInDown">Library</h2>
-                    </a>
-                </div>
-                <div class="nav__box animate__animated  animate__backInRight">
-                    <input class="nav__box--search" type="text" name="">
-                    <a href="#"><i class="fas fa-search nav__box--btn"></i></a>
-                </div>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
             </div>
-        </header>
-        <!-- ----------------Nav end---------------- -->
-        <!-- ----------------Main init---------------- -->
-        <main class="intro animate__animated animate__fadeIn" id="intro__books">
-            <div class="intro__box">
-                <h1 class="intro__title">BOOKS</h1>
-                <p class="intro__description">books categorization</p>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="collections.html">Collections</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="educations.html">Education Chanells</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="books.html">Books</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="resources.html">Resources pages</a>
+                </li>
+
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark border rounded-3" type="submit">Search</button>
+              </form>
             </div>
-            <p class="intro__date">13 de dicembre 2021</p>
-        </main>
-
-        <!-- ----------------Main End---------------- -->
-
-        <!-- ----------------Categorization Init---------------- -->
-
-
-        <section class="inner animate__animated animate__fadeInRightBig" id="inner_books">
-            <div class="inner__cards--container">
-                <ul class="inner__cards--ul">
-                    <li>
-                        <a href="designBooks.html" id="inner_design" class="inner_enlace">
-                            <div class="inner_img"></div>
-                            <div class="inner_texto">
-                                <h5>Design books</h5>
-                                <p>231 elements</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="construction.html" id="inner_front" class="inner_enlace">
-                            <div class="inner_img"></div>
-                            <div class="inner_texto">
-                                <h5>Front End books</h5>
-                                <p>319 elements</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="construction.html" id="inner_back" class="inner_enlace">
-                            <div class="inner_img"></div>
-                            <div class="inner_texto">
-                                <h5>Back End books</h5>
-                                <p>247 elements</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="construction.html" id="inner_security" class="inner_enlace">
-                            <div class="inner_img"></div>
-                            <div class="inner_texto">
-                                <h5>Security books</h5>
-                                <p>154 elements</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="construction.html" id="inner_full" class="inner_enlace">
-                            <div class="inner_img"></div>
-                            <div class="inner_texto">
-                                <h5>FullStack books</h5>
-                                <p>267 elements</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="construction.html" id="inner_2D" class="inner_enlace">
-                            <div class="inner_img"></div>
-                            <div class="inner_texto">
-                                <h5>2D books</h5>
-                                <p>154 elements</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="construction.html" id="inner_3D" class="inner_enlace">
-                            <div class="inner_img"></div>
-                            <div class="inner_texto">
-                                <h5>3D books</h5>
-                                <p>464 elements</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="construction.html" id="inner_photography" class="inner_enlace">
-                            <div class="inner_img"></div>
-                            <div class="inner_texto">
-                                <h5>Photography books</h5>
-                                <p>144 elements</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="construction.html" id="inner_film" class="inner_enlace">
-                            <div class="inner_img"></div>
-                            <div class="inner_texto">
-                                <h5>Film books</h5>
-                                <p>127 elements</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="construction.html" id="inner_marketing" class="inner_enlace">
-                            <div class="inner_img"></div>
-                            <div class="inner_texto">
-                                <h5>Marketing books</h5>
-                                <p>87 elements</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="construction.html" id="inner_uxui" class="inner_enlace">
-                            <div class="inner_img"></div>
-                            <div class="inner_texto">
-                                <h5>Diseño UX/UI books</h5>
-                                <p>107 elements</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="construction.html" id="inner_other" class="inner_enlace">
-                            <div class="inner_img"></div>
-                            <div class="inner_texto">
-                                <h5>Other books</h5>
-                                <p>325 elements</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-
-        <!-- ----------------Categorizaton end---------------- -->
-
-        <!-- ----------------Footer init---------------- -->
-        <section>
-            <footer>
-                <div class="footer-copy animate__animated animate__fadeInUp">
-                    <p>© Copyright. All Rights Reserved
-                        Designed by DianaSerradilla</p>
-                </div>
-            </footer>
-        </section>
-        <!-- ----------------Footer end---------------- -->
+          </div>
+        </div>
+      </nav>
     </div>
+    <!-- ---------------------------------navbar end----------------------------------------- -->
+    <!-- ---------------------------------headermain init----------------------------------------- -->
+
+    <main class="row">
+      <div class="carousel-inner ">
+        <div class=" intro" id="intro__books">
+          <div class="intro__box">
+            <h1 class="intro__title">BOOKS</h1>
+            <p class="intro__description">books categorization</p>
+          </div>
+          <p class="intro__date">13 de dicembre 2021</p>
+        </div>
+
+      </div>
+    </main>
+    <!-- ---------------------------------headermain end----------------------------------------- -->
+    <!-- ---------------------------------Card  init----------------------------------------- -->
+
+    <div class="row d-flex justify-content-center m-4 align-items-center">
+      <div class="d-flex justify-content-center align-items-center flex-wrap ">
+        <div class="card m-4" style="width: 18rem;">
+          <a href="construction.html"><img src="/assets/img-design.jpg" class="card-img-top" alt="designLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Design Books</h5>
+            <p class="card-text  card__text">231 elements</p>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="construction.html"><img src="/assets/img-front.jpg" class="card-img-top" alt="frontendLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">FrontEnd Books</h5>
+            <p class="card-text  card__text">319 elements</p>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="construction.html"><img src="/assets/img-back.jpg" class="card-img-top" alt="backendLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">BackEnd Books</h5>
+            <p class="card-text  card__text">247 elements</p>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="construction.html"><img src="/assets/img-security.jpg" class="card-img-top"
+              alt="securityLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Security Books</h5>
+            <p class="card-text  card__text">154 elements</p>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="construction.html"><img src="/assets/img-full.jpg" class="card-img-top" alt="fullstackLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Fullstack Books</h5>
+            <p class="card-text  card__text">267 elements</p>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="construction.html"><img src="/assets/img-2D.jpg" class="card-img-top" alt="2DLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">2D Books</h5>
+            <p class="card-text  card__text">154 elements</p>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="construction.html"><img src="/assets/img-3D.jpg" class="card-img-top" alt="3DLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">3D Books</h5>
+            <p class="card-text  card__text">464 elements</p>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="construction.html"><img src="/assets/img-photography.jpg" class="card-img-top"
+              alt="photographyLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Photography Books</h5>
+            <p class="card-text  card__text">144 elements</p>
+
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="construction.html"><img src="/assets/img-film.jpg" class="card-img-top" alt="filmLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Film Books</h5>
+            <p class="card-text  card__text">127 elements</p>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="construction.html"><img src="/assets/img-marketing.jpg" class="card-img-top"
+              alt="marketingLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Marketing Books</h5>
+            <p class="card-text  card__text">87 elements</p>
+
+
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="construction.html"><img src="/assets/img-uxui.jpg" class="card-img-top" alt="uxUiLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Diseño UX/UI Books</h5>
+            <p class="card-text  card__text">107 elements</p>
+
+
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="construction.html"><img src="/assets/img-otherB.jpg" class="card-img-top" alt="otherBookLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Other Books</h5>
+            <p class="card-text  card__text">325 elements</p>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------Card  end----------------------------------------- -->
+
+    <!-- ---------------------------------Footer init----------------------------------------- -->
+
+    <section>
+      <footer>
+        <div class=" row footer-copy">
+          <p>© Copyright. All Rights Reserved
+            Designed by DianaSerradilla</p>
+        </div>
+      </footer>
+    </section>
+
+    <!-- ---------------------------------Footer end----------------------------------------- -->
+    <!-- ---------------------------------Script init----------------------------------------- -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <!-- ---------------------------------Script end----------------------------------------- -->
+
+
 </body>
 
 </html>

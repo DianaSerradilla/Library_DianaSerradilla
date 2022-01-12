@@ -2,409 +2,361 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library | Diana Serradilla</title>
-    <!-- --------------Css Vanilla----------- -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- --------------Icons----------- -->
-    <script src="https://kit.fontawesome.com/8154432079.js" crossorigin="anonymous"></script>
-    <!-- --------------Favicon----------- -->
-    <link rel="icon" type="image/x-icon" href="assets/library-favicon.ico">
-    <!-- --------------Fuentes----------- -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300&family=Playfair+Display:wght@400;700&family=Poppins&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300&family=Oswald:wght@400;500;700&family=Playfair+Display:wght@400;700&family=Poppins&display=swap"
-        rel="stylesheet">
-    <!-- --------------Animaciones----------- -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title card__title>Library | Diana Serradilla</title card__title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- --------------------------css vanilla---------------------------------- -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- --------------------------icons---------------------------------- -->
+  <script src="https://kit.fontawesome.com/8154432079.js" crossorigin="anonymous"></script>
+  <!-- --------------------------favicon---------------------------------- -->
+  <link rel="icon" type="image/x-icon" href="assets/library-favicon.ico">
 
 </head>
 
 <body>
-    <div class="father__container">
+  <div class="container-fluid">
+    <!-- ---------------------------------navbar init----------------------------------------- -->
+    <div class="row">
+      <nav class="navbar navbar-light bg-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="nav__tittle">LIBRARY</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
 
-        <!-- ----------------Nav init---------------- -->
-        <header id="header">
-            <div class="nav">
-                <div class="nav__menu">
-                    <input type="checkbox" id="nav" class="hidden">
-                    <label for="nav" class="nav__menu--btn animate__animated  animate__backInLeft">
-                        <i class="fas fa-bars nav__menu--btn-i"></i>
-                    </label>
-                    <nav class="nav__menu--items">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="pages/collections.html">Collections</a></li>
-                            <li><a href="pages/education.html">Education Channels</a></li>
-                            <li><a href="pages/books.html">Books</a></li>
-                            <li><a href="pages/resources.html">Resources pages</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="nav__title">
-                    <a href="index.html">
-                        <h2 class="title__hidden animate__animated animate__backInDown">LB</h2>
-                        <h2 class="title__nhidden animate__animated animate__backInDown">Library</h2>
-                    </a>
-                </div>
-                <div class="nav__box animate__animated  animate__backInRight">
-                    <input class="nav__box--search " type="text" name="search">
-                    <a href="#"><i class="fas fa-search nav__box--btn"></i></a>
-                </div>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
             </div>
-        </header>
-        <!-- ----------------Nav end---------------- -->
-        <!-- ----------------Main init---------------- -->
-        <main class="intro animate__animated animate__fadeIn" id="intro__index">
-            <div class="intro__box">
-                <h1 class="intro__title ">LIBRARY</h1>
-                <p class="intro__description">graphics resources and code snippets</p>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/collections.html">Collections</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/educations.html">Education Channels</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/books.html">Books</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/resources.html">Resources pages</a>
+                </li>
+
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark border rounded-3" type="submit">Search</button>
+              </form>
             </div>
-            <p class="intro__date">13 de dicembre 2021</p>
-        </main>
-
-        <!-- ----------------Main End---------------- -->
-        <!-- ----------------Collections init---------------- -->
-        <section class="inner">
-            <div class="inner__title animate__animated animate__fadeInLeftBig">
-                <a href="pages/collections.html">Collections</a>
-            </div>
-            <div class="inner__cards--container animate__animated animate__fadeInRightBig">
-                <ul class="inner__cards--ul">
-                    <li>
-                        <figure>
-                            <a href="pages/construction.html"><img src="assets/img-preloader.png" alt="Preloader"></a>
-                        </figure>
-                        <div class="inner__cards--boxInfo">
-                            <div>
-                                <h2>Preloader</h2>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <figure>
-                            <a href="pages/construction.html"><img src="assets/img-portfolio.jpg" alt="portfolio"></a>
-                        </figure>
-                        <div class="inner__cards--boxInfo">
-                            <div>
-                                <h2>Portfolio photographer</h2>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-
-                    </li>
-                    <li>
-
-                        <figure>
-                            <a href="pages/construction.html"><img src="assets/img-404.jpg" alt="404"></a>
-                        </figure>
-                        <div class="inner__cards--boxInfo">
-                            <div>
-                                <h2>404 page illustration</h2>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-
-                    </li>
-                    <li>
-                        <figure>
-                            <a href="pages/construction.html"><img src="assets/img-search.jpg" alt="Search"></a>
-                        </figure>
-                        <div class="inner__cards--boxInfo">
-                            <div>
-                                <h2>Search 3D</h2>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <hr>
-            <!-- ----------------Collections end---------------- -->
-
-            <!-- ----------------Education init---------------- -->
-
-            <div class="inner__title animate__animated animate__fadeInLeftBig">
-                <a href="pages/education.html">Education channels</a>
-            </div>
-            <div class="inner__cards--container animate__animated animate__fadeInRightBig">
-                <ul class="inner__cards--ul">
-                    <li>
-                        <figure>
-                            <a href="https://platzi.com/" target="_blank"><img src="assets/img-platzi.png"
-                                    alt="platzi"></a>
-                        </figure>
-                        <div class="inner__cards--boxInfo">
-                            <div>
-                                <h2>Platzi Academy</h2>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-
-                        <figure>
-                            <a href="https://www.youtube.com/c/ProgramadorX" target="_blank"><img
-                                    src="assets/img-programadorX.png" alt="programdorx"></a>
-                        </figure>
-                        <div class="inner__cards--boxInfo">
-                            <div>
-                                <h2>Programador X</h2>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-
-                    </li>
-                    <li>
-
-                        <figure>
-                            <a href="https://www.crehana.com/ar/" target="_blank"><img src="assets/img-crehana.jpg"
-                                    alt="Crehana"></a>
-                        </figure>
-                        <div class="inner__cards--boxInfo">
-                            <div>
-                                <h2>Crehana Academy</h2>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-
-                    </li>
-                    <li>
-
-                        <figure>
-                            <a href="https://www.w3schools.com/" target="_blank"><img src="assets/img-w3school.jpg"
-                                    alt="W3School"></a>
-                        </figure>
-                        <div class="inner__cards--boxInfo">
-                            <div>
-                                <h2>W3School Academy</h2>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-
-                    </li>
-                </ul>
-            </div>
-
-            <hr>
-            <!-- ----------------Colecctions end---------------- -->
-
-            <!-- ----------------Books init---------------- -->
-
-            <div class="inner__title animate__animated animate__fadeInLeftBig">
-                <a href="pages/books.html">Books</a>
-            </div>
-            <div class="cards-container animate__animated animate__fadeInRightBig">
-                <ul class="inner__cards--ul">
-                    <li>
-
-                        <figure>
-                            <a href="pages/construction.html"><img src="assets/img-bookjs.png" alt="Javascript"></a>
-                        </figure>
-                        <div class="inner__cards--boxInfo">
-                            <div>
-                                <h2>FrontEnd Javascript</h2>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-
-                    </li>
-                    <li>
-
-                        <figure>
-                            <a href="pages/construction.html"><img src="assets/img-bookphp.png" alt="Php"></a>
-                        </figure>
-                        <div class="inner__cards--boxInfo">
-                            <div>
-                                <h2>BackEnd PHP</h2>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-
-                    </li>
-                    <li>
-
-                        <figure>
-                            <a href="pages/construction.html"><img src="assets/img-bookPhotoshop.png"
-                                    alt="Photoshop"></a>
-                        </figure>
-                        <div class="inner__cards--boxInfo">
-                            <div>
-                                <h2>Design Photoshop</h2>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-
-                    </li>
-                    <li>
-
-                        <figure>
-                            <a href="pages/construction.html"><img src="assets/img-bookPhotography.png"
-                                    alt="Photography"></a>
-                        </figure>
-                        <div class="inner__cards--boxInfo">
-                            <div>
-                                <h2>Photography</h2>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <hr>
-            <!-- ----------------Books end---------------- -->
-            <!-- ----------------Resources init---------------- -->
-            <div class="inner__title animate__animated animate__fadeInLeftBig">
-                <a href="pages/resources.html">Resources pages</a>
-            </div>
-            <div class="cards-container animate__animated animate__fadeInRightBig">
-                <ul class="inner__cards--ul">
-                    <li>
-
-                        <figure>
-                            <a href="https://www.ls.graphics/free-mockups" target="_blank"><img
-                                    src="assets/img-freemockup.png" alt="lsGraphics"></a>
-                        </figure>
-                        <div class="inner__cards--boxInfo">
-                            <div>
-                                <h2>ls graphics | Free mokcups</h2>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-
-                    </li>
-                    <li>
-
-                        <figure>
-                            <a href="https://www.pexels.com/es-es/" target="_blank"><img src="assets/img-pexels.png"
-                                    alt="Pexels"></a>
-                        </figure>
-                        <div class="inner__cards--boxInfo">
-                            <div>
-                                <h2>Free photos and videos</h2>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-
-                    </li>
-                    <li>
-
-                        <figure>
-                            <a href="https://tools.pingdom.com/#5f4a7c8d02400000" target="_blank"><img
-                                    src="assets/img-pingdom.png" alt="Pingdom"></a>
-                        </figure>
-                        <div class="inner__cards--boxInfo">
-                            <div>
-                                <h2>Website Speed Test</h2>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <figure>
-                            <a href="https://filmstock.wondershare.com/free.html" target="_blank"><img
-                                    src="assets/img-filmstock.png" alt="filmstock"></a>
-                        </figure>
-                        <div class="inner__cards--boxInfo">
-                            <div>
-                                <h2>Film Stock Free</h2>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-
-        <!-- ----------------Resources end---------------- -->
-
-        <!-- ----------------Contact init---------------- -->
-
-        <div class="container__contact animate__animated animate__fadeInUp">
-            <section id="contact">
-                <div class="contact__social">
-                    <a href="https://www.instagram.com/laddy___di/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/DianaSerradilla" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/diana-serradilla/" target="_blank"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.behance.net/serradilla7b58" target="_blank"><i class="fab fa-behance"></i></a>
-                </div>
-                <div class="contact__box">
-                    <div class="contact__box--heading">
-                        <h3>Contact</h3>
-                    </div>
-                    <div class="contact__inputs">
-                        <input type="text" name="Name" placeholder="Full name">
-                        <input type="email" name="Email" placeholder="example@gmail.com">
-                        <textarea name="message" id="message" placeholder="Write message"></textarea>
-                        <button>SEND</button>
-                    </div>
-                </div>
-                <div class="contact__map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26804.487640900854!2d-68.87607162268178!3d-32.88333397415693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1638976309909!5m2!1ses-419!2sar"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </section>
+          </div>
         </div>
-        <!-- ----------------Contac end---------------- -->
-
-
-        <!-- ----------------Footer init---------------- -->
-        <section>
-            <footer>
-                <div class="footer-copy animate__animated animate__fadeInUp">
-                    <p>© Copyright. All Rights Reserved
-                        Designed by DianaSerradilla</p>
-                </div>
-            </footer>
-        </section>
-        <!-- ----------------Footer end---------------- -->
+      </nav>
     </div>
+    <!-- ---------------------------------navbar end----------------------------------------- -->
+    <!-- ---------------------------------headermain init----------------------------------------- -->
+
+    <main class="row">
+      <div class="carousel-inner ">
+        <div class=" intro" id="intro__index">
+          <div class="intro__box">
+            <h1 class="intro__title ">LIBRARY</h1>
+            <p class="intro__description">graphics resources and code snippets</p>
+          </div>
+          <p class="intro__date">13 de dicembre 2021</p>
+        </div>
+
+      </div>
+    </main>
+    <!-- ---------------------------------headermain end----------------------------------------- -->
+    <!-- ---------------------------------Card collections init----------------------------------------- -->
+
+    <div class="row d-flex justify-content-center m-4 align-items-center">
+
+      <div class="d-inline-flex container__text">
+        <a href="/pages/collections.html" class="d-inline-flex">
+          <h3 class="m-0 card__tittleMain">Collections</h3>
+        </a>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center flex-wrap ">
+        <div class="card m-4" style="width: 18rem;">
+          <a href="pages/construction.html"><img src="/assets/img-preloader.png" class="card-img-top"
+              alt="preloaderLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Preloader</h5>
+            <p class="card-text  card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+              explicabo.
+            </p>
+
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="pages/construction.html"><img src="/assets/img-portfolio.jpg" class="card-img-top"
+              alt="portfolioLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Portfolio</h5>
+            <p class="card-text card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, corporis?
+            </p>
+
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="pages/construction.html"><img src="/assets/img-404.jpg" class="card-img-top" alt="404Library"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Error 404</h5>
+            <p class="card-text card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur,
+              officia!
+            </p>
+
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="pages/construction.html"><img src="/assets/img-search.jpg" class="card-img-top"
+              alt="searchLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Search</h5>
+            <p class="card-text card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, autem.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------Card collections end----------------------------------------- -->
+    <!-- ---------------------------------Card education init----------------------------------------- -->
+    <hr>
+
+    <div class="row d-flex justify-content-center m-4 align-items-center">
+
+      <div class="d-inline-flex container__text">
+        <a href="/pages/educations.html" class="d-inline-flex">
+          <h3 class="m-0 card__tittleMain">Education Channels</h3>
+        </a>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center flex-wrap ">
+        <div class="card m-4" style="width: 18rem;">
+          <a href="https://platzi.com/" target="_blank"><img src="/assets/img-platzi.png" class="card-img-top"
+              alt="PlatziLibrary"></a>
+          <div class="card-body">
+
+            <h5 class="card-title card__title">Platzi</h5>
+
+            <p class="card-text card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+              explicabo.
+            </p>
+
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="https://www.youtube.com/c/ProgramadorX" target="_blank"><img src="/assets/img-programadorX.png"
+              class="card-img-top" alt="programadorLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Programador x</h5>
+            <p class="card-text card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, corporis?
+            </p>
+
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="https://www.crehana.com/ar/" target="_blank"><img src="/assets/img-crehana.jpg" class="card-img-top"
+              alt="crehanaLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Crehana</h5>
+            <p class="card-text card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur,
+              officia!
+            </p>
+
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="https://www.w3schools.com/"><img src="/assets/img-w3school.jpg" class="card-img-top"
+              alt="w3Library"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">W3School</h5>
+            <p class="card-text card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, autem.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------Card education end----------------------------------------- -->
+    <!-- ---------------------------------Card books init----------------------------------------- -->
+    <hr>
+
+    <div class="row d-flex justify-content-center m-4 align-items-center">
+
+      <div class="d-inline-flex container__text">
+        <a href="/pages/books.html" class="d-inline-flex">
+          <h3 class="m-0 card__tittleMain">Books</h3>
+        </a>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center flex-wrap">
+        <div class="card m-4" style="width: 18rem;">
+          <a href="pages/construction.html"><img src="/assets/img-bookjs.png" class="card-img-top"
+              alt="JavascriptLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">FrontEnd Javascript</h5>
+            <p class="card-text card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+              explicabo.
+            </p>
+
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="pages/construction.html"><img src="/assets/img-bookphp.png" class="card-img-top"
+              alt="phpLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">BackEnd PHP</h5>
+            <p class="card-text card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, corporis?
+            </p>
+
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="pages/construction.html"><img src="/assets/img-bookPhotoshop.png" class="card-img-top"
+              alt="photoshopLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Design Photoshop</h5>
+            <p class="card-text card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur,
+              officia!
+            </p>
+
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="pages/construction.html"><img src="/assets/img-bookPhotography.png" class="card-img-top"
+              alt="photographyLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Photography</h5>
+            <p class="card-text card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, autem.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------Card books end----------------------------------------- -->
+    <!-- ---------------------------------Card resources init----------------------------------------- -->
+    <hr>
+    <div class="row d-flex justify-content-center m-4 align-items-center">
+
+      <div class="d-inline-flex container__text">
+        <a href="/pages/resources.html" class="d-inline-flex">
+          <h3 class="m-0 card__tittleMain">Resources pages</h3>
+        </a>
+      </div>
+
+      <div class=" d-flex justify-content-center align-items-center flex-wrap">
+        <div class="card m-4" style="width: 18rem;">
+          <a href="https://www.ls.graphics/free-mockups" target="_blank"><img src="/assets/img-freemockup.png"
+              class="card-img-top" alt="mockupLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">ls graphics | Free mokcups</h5>
+            <p class="card-text card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+              explicabo.
+            </p>
+
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="https://www.pexels.com/es-es/" target="_blank"><img src="/assets/img-pexels.png" class="card-img-top"
+              alt="freeLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Free photos and videos</h5>
+            <p class="card-text card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, corporis?
+            </p>
+
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="https://tools.pingdom.com/#5f4a7c8d02400000" target="_blank"><img src="/assets/img-pingdom.png"
+              class="card-img-top" alt="speedLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Website Speed Test </h5>
+            <p class="card-text card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur,
+              officia!
+            </p>
+
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+          <a href="https://filmstock.wondershare.com/free.html" target="_blank"><img src="/assets/img-filmstock.png"
+              class="card-img-top" alt="filmLibrary"></a>
+          <div class="card-body">
+            <h5 class="card-title card__title">Film Stock Free</h5>
+            <p class="card-text card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, autem.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------Card resources end----------------------------------------- -->
+    <!-- ---------------------------------Contact init----------------------------------------- -->
+    <hr>
+
+    <div class=" row container__contact">
+      <section id="contact">
+        <div class="contact__social">
+          <a href="https://www.instagram.com/laddy___di/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/DianaSerradilla" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/diana-serradilla/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.behance.net/serradilla7b58" target="_blank"><i class="fab fa-behance"></i></a>
+        </div>
+        <div class="contact__box">
+          <div class="contact__box--heading">
+            <h3>Contact</h3>
+          </div>
+          <div class="contact__inputs">
+            <input type="text" name="Name" placeholder="Full name">
+            <input type="email" name="Email" placeholder="example@gmail.com">
+            <textarea name="message" id="message" placeholder="Write message"></textarea>
+            <button>SEND</button>
+          </div>
+        </div>
+        <div class="contact__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26804.487640900854!2d-68.87607162268178!3d-32.88333397415693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1638976309909!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+    </div>
+    <!-- ---------------------------------Contact end----------------------------------------- -->
+    <!-- ---------------------------------Footer init----------------------------------------- -->
+
+    <section>
+      <footer>
+        <div class=" row footer-copy">
+          <p>© Copyright. All Rights Reserved
+            Designed by DianaSerradilla</p>
+        </div>
+      </footer>
+    </section>
+
+    <!-- ---------------------------------Footer end----------------------------------------- -->
+    <!-- ---------------------------------Script init----------------------------------------- -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <!-- ---------------------------------Script end----------------------------------------- -->
+
+
 </body>
 
 </html>
