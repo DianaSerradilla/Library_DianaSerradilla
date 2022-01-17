@@ -1,0 +1,21 @@
+/*-----------------FOOTER INIT -----------------*/
+
+footer {
+  background-color: #fdfdfd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;  
+  width: 100%;
+  bottom: 0;  
+  position: relative;
+  z-index: 99999;
+  /* -------------grid------------ */
+  grid-area: footer;
+}
+
+.footer-copy p {
+  font-size: 10px;
+}
+
+/*-----------------FOOTER END -----------------*/

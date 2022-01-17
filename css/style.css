@@ -670,8 +670,8 @@ hr {
 }
 
 .intro_botton {
-  display: flex;
   background: white;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 120px;

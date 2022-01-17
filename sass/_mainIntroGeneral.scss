@@ -1,0 +1,100 @@
+/*-----------------Main init -----------------*/
+
+
+#intro__index {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.767)),
+    url("../assets/intro-egg.jpg");
+}
+
+#intro__books {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.767)),
+    url("../assets/intro-books.jpg");
+}
+
+#intro__collections {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.767)),
+    url("../assets/intro-collections.jpg");
+  height: 400px;
+}
+
+#intro__construction {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.767)),
+    url("../assets/intro-contruction.jpg");
+  height: 100vh;
+}
+
+#intro__education {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.767)),
+    url("../assets/intro-education.jpg");
+}
+
+#intro__resources {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.767)),
+    url("../assets/intro-resources.jpg");
+  height: 400px;
+}
+#intro__designBooks {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.767)),
+    url("../assets/intro-designBooks.jpg");
+  height: 300px;
+}
+#intro__pages {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.767)),
+    url("../assets/intro-pages.jpg");
+  height: 300px;
+}
+
+.intro {
+  height: 500px;
+  background-position: center;
+  background-size: cover;    
+  @include flex(center,center,row,nowrap);
+  /* -------------grid--------- */
+  grid-area: main;
+}
+
+.intro__box {   
+  @include flex(center,center,column,nowrap);
+  text-align: center;
+}
+
+.intro__title {
+  color: white;
+  margin: 0;
+  font-size: 50px;
+  letter-spacing: 15px;
+}
+.intro__description {
+  color: white;
+  font-size: 20px;
+}
+
+.intro__date {
+  color: white;
+  font-size: 15px;
+}
+
+.intro_botton {
+  
+  background: white;
+  @include flex(center,center,row,nowrap); 
+  width: 120px;
+  height: 30px;
+  justify-self: center;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.intro__enlance {
+  color: grey;
+  &:hover {
+  color: $colorSecondary;
+}
+}
+
+
+
+/*-----------------Main end -----------------*/

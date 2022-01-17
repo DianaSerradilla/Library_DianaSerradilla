@@ -1,0 +1,61 @@
+/*-----------------Card img education init -----------------*/
+
+#inner__education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+#inner_academys {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/img-academys.jpg");
+  background-size: 20rem;
+  &:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img-academys.jpg");
+  background-size: 21rem;
+}
+}
+
+
+
+#inner_youtube {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/img-youtube.jpg");
+  background-size: 20rem;
+  &:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img-youtube.jpg");
+  background-size: 21rem;
+}
+}
+
+
+
+#inner_games {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/img-gamesA.jpg");
+  background-size: 20rem;
+  &:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img-gamesA.jpg");
+  background-size: 21rem;
+}
+}
+
+
+#inner_plataforms {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/img-plataforms.jpg");
+  background-size: 20rem;
+  &:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img-plataforms.jpg");
+  background-size: 21rem;
+}
+}
+
+
+
+/*-----------------Card img education end -----------------*/

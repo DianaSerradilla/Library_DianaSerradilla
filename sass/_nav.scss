@@ -1,0 +1,204 @@
+/*-----------------Menu init -----------------*/
+
+.nav {  
+  @include flex(space-around,center,row,nowrap);  
+  background: $colorPrimary;
+  /* -----------grid---------- */
+  grid-area: header;
+  height: 100%;
+}
+
+.nav__menu--items {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  z-index: -1;
+  background-color: $colorSecondary;
+  opacity: 0;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  ul {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  width: 100%;
+  li {
+  display: block;
+  float: none;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  a {
+  padding: 10px 30px;
+  opacity: 0;
+  color: #f2f2f2;
+  font-size: 15px;
+  font-weight: weight("semiBold");
+  letter-spacing: 1.2px;
+  transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  -o-transform: translateX(-20px);
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  &:hover {
+  color: $colorSecondary;
+  font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+
+.nav__menu--btn {
+  background-color: $colorSecondary;
+  position: relative;
+  left: 10px;
+  top: 20px;
+  display: block;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  z-index: 9999;
+  border-radius: 45%;
+  -webkit-border-radius: 45%;
+  -moz-border-radius: 45%;
+  -ms-border-radius: 45%;
+  -o-border-radius: 45%;
+  margin-bottom: 40px;
+  transition: background 1s ease-in-out;
+  -webkit-transition: background 1s ease-in-out;
+  -moz-transition: background 1s ease-in-out;
+  -ms-transition: background 1s ease-in-out;
+  -o-transition: background 1s ease-in-out;
+  &:hover {
+  background: $colorNavHover;
+  cursor: pointer;
+  transform: translate(0, 3%);
+  -webkit-transform: translate(0, 3%);
+  -moz-transform: translate(0, 3%);
+  -ms-transform: translate(0, 3%);
+  -o-transform: translate(0, 3%);
+  }
+}
+
+
+
+.nav__menu--btn-i {
+  margin-top: 15px;
+  margin-left: 15px;
+  color: $colorPrimary;
+}
+
+#nav:checked ~ .nav__menu--items {
+  z-index: 9990;
+  opacity: 1;
+  ul li a {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
+}
+
+
+.hidden {
+  display: none;
+}
+
+.nav__box {
+  background-color: $colorSecondary;
+  height: 15px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  padding: 15px;
+}
+
+.nav__box--search {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: $colorPrimary;
+  font-size: 16px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  line-height: 10px;
+  width: 0px;
+}
+
+.nav__box:hover > .nav__box--search {
+  width: 260px;
+  padding: 0 6px;
+}
+
+.nav__box:hover > .nav__box--btn {
+  background: white;
+}
+
+.nav__box--btn:hover {
+  color: $colorNavHover;
+}
+
+.nav__box--btn {
+  color: $colorPrimary;
+  float: right;
+  width: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: $colorSecondary;
+  @include flex(center,center,row,nowrap);  
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.nav__title h2 {
+  color: $colorSecondary;
+  letter-spacing: 3px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  &:hover {
+  letter-spacing: 5px;
+  color: $colorNavHover;
+}
+
+}
+
+.title__hidden {
+  display: none;
+}
+
+/*-----------------Menu end -----------------*/
