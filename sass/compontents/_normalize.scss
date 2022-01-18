@@ -17,6 +17,15 @@ html {
   position: relative;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  font-family: abs.$fontPrimary;
+  background-color: abs.$colorPrimary;
+  /* max-width: 100%; */
+  height: 100%;
+}
+
 .father__container {
   display: grid;
   grid-template-rows: repeat(5, auto);
@@ -35,7 +44,7 @@ html {
 /**
    * Remove the margin in all browsers.
    */
-   /**
+/**
    * Render the `main` element consistently in IE.
    */
 
@@ -366,14 +375,5 @@ li {
 }
 
 hr {
-  width: 1500px;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  font-family: abs.$fontPrimary;
-  background-color: abs.$colorPrimary;
-  /* max-width: 100%; */
-  height: 100%;
+  width: 80%;
 }

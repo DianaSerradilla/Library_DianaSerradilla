@@ -1,55 +1,53 @@
 @use "../abstracts/" as abs;
 
-
 /*-----------------Main init -----------------*/
 
-
 #intro__index {
-  @include  abs.bgIntro("../assets/intro-egg.jpg"); 
+  @include abs.bgIntro("../assets/intro-egg.jpg");
 }
 
 #intro__books {
-  @include  abs.bgIntro("../assets/intro-books.jpg");   
+  @include abs.bgIntro("../assets/intro-books.jpg");
 }
 
 #intro__collections {
-  @include  abs.bgIntro("../assets/intro-collections.jpg");   
+  @include abs.bgIntro("../assets/intro-collections.jpg");
   height: 400px;
 }
 
 #intro__construction {
-  @include  abs.bgIntro("../assets/intro-contruction.jpg");   
+  @include abs.bgIntro("../assets/intro-contruction.jpg");
   height: 100vh;
 }
 
 #intro__education {
-  @include  abs.bgIntro("../assets/intro-education.jpg");   
+  @include abs.bgIntro("../assets/intro-education.jpg");
 }
 
 #intro__resources {
-  @include  abs.bgIntro("../assets/intro-resources.jpg");   
+  @include abs.bgIntro("../assets/intro-resources.jpg");
   height: 400px;
 }
 #intro__designBooks {
-  @include  abs.bgIntro("../assets/intro-designBooks.jpg");   
+  @include abs.bgIntro("../assets/intro-designBooks.jpg");
   height: 300px;
 }
 #intro__pages {
-  @include  abs.bgIntro("../assets/intro-pages.jpg"); 
+  @include abs.bgIntro("../assets/intro-pages.jpg");
   height: 300px;
 }
 
 .intro {
   height: 500px;
   background-position: center;
-  background-size: cover;    
-  @include abs.flex(center,center,row,nowrap);
+  background-size: cover;
+  @include abs.flex(center, center, column, nowrap);
   /* -------------grid--------- */
   grid-area: main;
 }
 
-.intro__box {   
-  @include abs.flex(center,center,column,nowrap);
+.intro__box {
+  @include abs.flex(center, center, column, nowrap);
   text-align: center;
 }
 
@@ -57,11 +55,13 @@
   color: white;
   margin: 0;
   font-size: 50px;
-  letter-spacing: 15px;
+  letter-spacing: 35px;
+  font-weight: abs.weigth("regular");
 }
 .intro__description {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: abs.weigth("regular");
 }
 
 .intro__date {
@@ -70,9 +70,8 @@
 }
 
 .intro_botton {
-  
   background: white;
-  @include abs.flex(center,center,row,nowrap); 
+  @include abs.flex(center, center, row, nowrap);
   width: 120px;
   height: 30px;
   justify-self: center;
@@ -86,10 +85,8 @@
 .intro__enlance {
   color: grey;
   &:hover {
-  color: abs.$colorSecondary;
+    color: abs.$colorSecondary;
+  }
 }
-}
-
-
 
 /*-----------------Main end -----------------*/

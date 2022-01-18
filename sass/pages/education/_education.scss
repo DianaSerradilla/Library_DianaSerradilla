@@ -1,21 +1,25 @@
-@use '../../abstracts/' as abs;
+@use "../../abstracts/" as abs;
 
+#inner__education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*-----------------Card img education init -----------------*/
 #inner_academys {
-  @include abs.bgInner("../assets/img-academys.jpg"); 
+  @include abs.bgInner("../assets/img-academys.jpg");
 }
 
 #inner_youtube {
-  @include abs.bgInner("../assets/img-youtube.jpg"); 
+  @include abs.bgInner("../assets/img-youtube.jpg");
 }
 
 #inner_games {
-  @include abs.bgInner("../assets/img-gamesA.jpg"); 
+  @include abs.bgInner("../assets/img-gamesA.jpg");
 }
 
 #inner_plataforms {
-  @include abs.bgInner("../assets/img-plataforms.jpg"); 
+  @include abs.bgInner("../assets/img-plataforms.jpg");
 }
-
 
 /*-----------------Card img education end -----------------*/

@@ -1,16 +1,15 @@
-@use '../abstracts/' as abs;
+@use "../abstracts/" as abs;
 /*-----------------FOOTER INIT -----------------*/
 
 footer {
   background-color: #fdfdfd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;  
+  @include abs.flex(center, center, row, nowrap);
+  height: 50px;
   width: 100%;
-  bottom: 0;  
-  position: relative;
+  bottom: 0;
+  position: absolute;
   z-index: 99999;
+  bottom: 0;
   /* -------------grid------------ */
   grid-area: footer;
 }

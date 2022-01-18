@@ -1,55 +1,40 @@
 /*-----------------Contact init -----------------*/
-@use '../abstracts/' as abs;
+@use "../abstracts/" as abs;
 
 .container__contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include abs.flex(center, center, row, nowrap);
   grid-area: section;
   width: auto;
 }
 
 .contact__social {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include abs.flex(center, center, column, nowrap);
   background: #ffffffff;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
-   a {
-  padding: 20px;
-  color: #7b7c7c;
-  font-size: 1.1rem;
-  &:hover {
-  color: #000000;
-  transition: all ease 0.3s;
+  a {
+    padding: 20px;
+    color: #7b7c7c;
+    font-size: 1.1rem;
+    &:hover {
+      color: #000000;
+      transition: all ease 0.3s;
+    }
+  }
 }
-}
-}
-
-
-
 
 #contact {
-  display: flex;
-  align-items: center;
+  @include abs.flex(none, center, row, nowrap);
   margin: 80px 10px 80px 250px;
 }
 
 .header__container {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
+  @include abs.flex(center, center, column, nowrap);
 }
 
 .contact__box {
   width: 300px;
   background: #202121;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include abs.flex(center, center, column, nowrap);
   padding: 30px 30px;
   box-shadow: 2px 0px 30px rgba(0, 0, 0, 0.1);
 }
@@ -62,68 +47,60 @@
 
 .contact__inputs {
   margin: 15px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include abs.flex(center, center, column, nowrap);
   input {
-  width: 250px;
-  height: 45px;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(251, 251, 251, 0.1);
-  outline: none;
-  margin: 10px;
-  padding: 10px;
-  box-sizing: border-box;
-  color: #f4f4f4;
-  display: flex;
-  &:focus {
-  border-bottom: 1px solid rgba(252, 252, 252, 1);
-  transition: all ease 0.5s;
+    width: 250px;
+    height: 45px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(251, 251, 251, 0.1);
+    outline: none;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #f4f4f4;
+    display: flex;
+    &:focus {
+      border-bottom: 1px solid rgba(252, 252, 252, 1);
+      transition: all ease 0.5s;
     }
   }
   textarea {
-  width: 250px !important;
-  height: 200px !important;
-  outline: none;
-  background: rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(82, 82, 82, 1);
-  color: #f4f4f4;
-  padding: 10px;
-  font-size: 0.7rem;
-  box-sizing: border-box;
-  &:focus {
-  border: none;
-  border-bottom: 1px solid rgba(252, 252, 252, 1);
-  transition: all ease 0.5s;
-  }
-
+    width: 250px !important;
+    height: 200px !important;
+    outline: none;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(82, 82, 82, 1);
+    color: #f4f4f4;
+    padding: 10px;
+    font-size: 0.7rem;
+    box-sizing: border-box;
+    &:focus {
+      border: none;
+      border-bottom: 1px solid rgba(252, 252, 252, 1);
+      transition: all ease 0.5s;
+    }
   }
   button {
-  width: 200px;
-  height: 40px;
-  background: #ffffff;
-  border: none;
-  outline: none;
-  margin-top: 20px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
-  letter-spacing: 1px;
-  &:active {
-  transform: scale(1.03);
+    width: 200px;
+    height: 40px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    &:active {
+      transform: scale(1.03);
+    }
+  }
 }
-}
-}
-
-
-
 
 .contact__inputs textarea::placeholder,
 .contact__inputs input::placeholder {
   font-size: 12px;
 }
-
 
 .contact__map {
   filter: grayscale(0.2);
