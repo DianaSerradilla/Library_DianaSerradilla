@@ -1,8 +1,8 @@
+@use "../abstracts/" as abs;
 /*-----------------Menu init -----------------*/
-
 .nav {  
-  @include flex(space-around,center,row,nowrap);  
-  background: $colorPrimary;
+  @include abs.flex(space-around,center,row,nowrap);  
+  background: abs.$colorPrimary;
   /* -----------grid---------- */
   grid-area: header;
   height: 100%;
@@ -15,7 +15,7 @@
   width: 20%;
   height: 100vh;
   z-index: -1;
-  background-color: $colorSecondary;
+  background-color: abs.$colorSecondary;
   opacity: 0;
   transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
@@ -42,7 +42,7 @@
   opacity: 0;
   color: #f2f2f2;
   font-size: 15px;
-  font-weight: weight("semiBold");
+  font-weight: abs.weigth("semiBold");
   letter-spacing: 1.2px;
   transform: translateX(-20px);
   -webkit-transform: translateX(-20px);
@@ -55,7 +55,7 @@
   -ms-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
   &:hover {
-  color: $colorSecondary;
+  color: abs.$colorSecondary;
   font-size: 16px;
         }
       }
@@ -65,7 +65,7 @@
 
 
 .nav__menu--btn {
-  background-color: $colorSecondary;
+  background-color: abs.$colorSecondary;
   position: relative;
   left: 10px;
   top: 20px;
@@ -86,7 +86,7 @@
   -ms-transition: background 1s ease-in-out;
   -o-transition: background 1s ease-in-out;
   &:hover {
-  background: $colorNavHover;
+  background: abs.$colorNavHover;
   cursor: pointer;
   transform: translate(0, 3%);
   -webkit-transform: translate(0, 3%);
@@ -101,7 +101,7 @@
 .nav__menu--btn-i {
   margin-top: 15px;
   margin-left: 15px;
-  color: $colorPrimary;
+  color: abs.$colorPrimary;
 }
 
 #nav:checked ~ .nav__menu--items {
@@ -124,7 +124,7 @@
 }
 
 .nav__box {
-  background-color: $colorSecondary;
+  background-color: abs.$colorSecondary;
   height: 15px;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -140,7 +140,7 @@
   outline: none;
   float: left;
   padding: 0;
-  color: $colorPrimary;
+  color: abs.$colorPrimary;
   font-size: 16px;
   transition: 0.4s;
   -webkit-transition: 0.4s;
@@ -161,11 +161,11 @@
 }
 
 .nav__box--btn:hover {
-  color: $colorNavHover;
+  color: abs.$colorNavHover;
 }
 
 .nav__box--btn {
-  color: $colorPrimary;
+  color: abs.$colorPrimary;
   float: right;
   width: 20px;
   border-radius: 50%;
@@ -173,8 +173,8 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  background: $colorSecondary;
-  @include flex(center,center,row,nowrap);  
+  background: abs.$colorSecondary;
+  @include abs.flex(center,center,row,nowrap);  
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
@@ -183,7 +183,7 @@
 }
 
 .nav__title h2 {
-  color: $colorSecondary;
+  color: abs.$colorSecondary;
   letter-spacing: 3px;
   transition: 0.4s;
   -webkit-transition: 0.4s;
@@ -192,7 +192,7 @@
   -o-transition: 0.4s;
   &:hover {
   letter-spacing: 5px;
-  color: $colorNavHover;
+  color: abs.$colorNavHover;
 }
 
 }

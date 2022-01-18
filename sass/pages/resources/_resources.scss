@@ -1,0 +1,28 @@
+/*-----------------Card img resources init -----------------*/
+@use '../../abstracts/' as abs;
+
+#inner__resources {
+  margin-top: 10em;
+}
+
+#inner_tool {
+  @include abs.bgInner("../assets/img-tool.jpg");
+}
+
+#inner_vrar {
+  @include abs.bgInner("../assets/img-vrar.jpg");
+}
+
+#inner_movies {
+  @include abs.bgInner("../assets/img-movies.jpg");
+}
+
+#inner_finances {
+  @include abs.bgInner("../assets/img-finances.jpg");
+}
+
+#inner_inspiration {
+  @include abs.bgInner("../assets/img-inspiration.jpg");
+}
+
+/*-----------------Card img resources end -----------------*/

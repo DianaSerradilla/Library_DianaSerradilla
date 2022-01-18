@@ -1,3 +1,5 @@
+@use "../abstracts/" as abs;
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -13,6 +15,18 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   min-height: 100%;
   position: relative;
+}
+
+.father__container {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "content"
+    "section"
+    "footer";
 }
 
 /* Sections
@@ -353,4 +367,13 @@ li {
 
 hr {
   width: 1500px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: abs.$fontPrimary;
+  background-color: abs.$colorPrimary;
+  /* max-width: 100%; */
+  height: 100%;
 }

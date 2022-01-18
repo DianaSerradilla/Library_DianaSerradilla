@@ -1,4 +1,6 @@
 /*-----------------Responisve init -----------------*/
+@use '../abstracts/' as abs;
+
 
 @media screen and (max-width: 1200px) {
   .contact__map {

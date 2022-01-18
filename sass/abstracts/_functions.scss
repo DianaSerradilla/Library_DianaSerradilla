@@ -1,0 +1,6 @@
+//------------function
+@use "../abstracts/variables" as var;
+
+@function weigth($weight-name) {
+  @return map-get(var.$font-weight, $weight-name);
+}

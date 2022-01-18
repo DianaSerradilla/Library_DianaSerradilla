@@ -1,0 +1,88 @@
+@use '../../abstracts/' as abs;
+/*-----------------Card img books design init -----------------*/
+#inner__designBooks {
+  margin-top: 6em;
+}
+
+
+#inner_how {
+   @include abs.bgInner("../assets/img-how.jpg");
+}
+
+#inner_thevignellicanon {
+   @include abs.bgInner("../assets/img-thevignellicanon.jpg");
+}
+
+
+
+#inner_GPDfNPO {
+   @include abs.bgInner("../assets/img-GDfNPO.jpg");
+}
+
+
+#inner_dotZero {
+   @include abs.bgInner("../assets/img-dotzero.jpg");
+}
+
+
+
+#inner_typografieDeutsche {
+   @include abs.bgInner("../assets/img-typografieDeutsche.jpg");
+}
+
+
+#inner_tiposFormales {
+   @include abs.bgInner("../assets/img-tiposFormales.jpg");
+}
+
+
+#inner_PPP {
+   @include abs.bgInner("../assets/img-PPP.jpg");
+}
+
+
+#inner_noLogo {
+   @include abs.bgInner("../assets/img-noLogo.jpg");
+}
+
+
+#inner_bodoniP1 {
+   @include abs.bgInner("../assets/img-bodoniP1.jpg");
+}
+
+#inner_bodoniP2 {
+   @include abs.bgInner("../assets/img-bodoniP2.jpg");
+}
+
+
+#inner_educacionVisual {
+   @include abs.bgInner("../assets/img-educacionVisual.jpg");
+}
+
+
+#inner_dreherBirra {
+   @include abs.bgInner("../assets/img-dreherBirra.jpg");
+}
+
+#inner_dictadura {
+   @include abs.bgInner("../assets/img-dictadura.jpg");
+}
+
+
+#inner_logoRapid {
+   @include abs.bgInner("../assets/img-logoRapid.jpg");
+}
+
+#inner_reticula {
+   @include abs.bgInner("../assets/img-reticula.jpg");
+}
+
+#inner_bauhaus {
+   @include abs.bgInner("../assets/img-bauhaus.jpg");
+}
+
+#inner_gestionDiseno {
+   @include abs.bgInner("../assets/img-gestionDiseno.jpg");
+}
+
+/*-----------------Card img books design end -----------------*/

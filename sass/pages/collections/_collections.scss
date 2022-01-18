@@ -1,0 +1,105 @@
+/*-----------------Card img collections init -----------------*/
+@use '../../abstracts/' as abs;
+
+
+#inner_collections {
+  margin-top: 4em;
+}
+
+#inner_menu {
+  @include abs.bgInner("../assets/img-menu.jpg");
+}
+
+#inner_footer {
+  @include abs.bgInner("../assets/img-footer.jpg");
+}
+
+#inner_search {
+  @include abs.bgInner("../assets/img-search.jpg");
+}
+
+#inner_hovers {
+  @include abs.bgInner("../assets/img-hover.jpeg");
+}
+
+#inner_transitions {
+  @include abs.bgInner("../assets/img-transitions.jpg");
+}
+
+#inner_preloader {
+  @include abs.bgInner("../assets/img-preloader.png");
+}
+
+#inner_portfolio {
+  @include abs.bgInner("../assets/img-portfolio.jpg");
+}
+
+#inner_contact {
+  @include abs.bgInner("../assets/img-contact.jpg");
+}
+
+#inner_404A {
+  @include abs.bgInner("../assets/img-404A.jpg");
+}
+
+#inner_parallax {
+  @include abs.bgInner("../assets/img-parallax.jpg");
+}
+
+#inner_landing {
+  @include abs.bgInner("../assets/img-landing.jpg");
+}
+
+#inner_ecommerce {
+  @include abs.bgInner("../assets/img-ecommerceA.jpg");
+}
+
+#inner_about {
+  @include abs.bgInner("../assets/img-about.jpg");
+}
+
+#inner_GAP {
+  @include abs.bgInner("../assets/img-GAP.jpg");
+}
+
+#inner_webgl {
+  @include abs.bgInner("../assets/img-webgl.jpg");
+}
+
+#inner_three {
+  @include abs.bgInner("../assets/img-threejs.jpg");
+}
+
+#inner_form {
+  @include abs.bgInner("../assets/img-form.jpg");
+}
+
+#inner_product {
+  @include abs.bgInner("../assets/img-product.jpg");
+}
+
+#inner_games {
+  @include abs.bgInner("../assets/img-games.jpg");
+}
+
+#inner_360 {
+  @include abs.bgInner("../assets/img-360.jpg");
+}
+
+#inner_maps {
+  @include abs.bgInner("../assets/img-maps.jpg");
+}
+
+#inner_newsletter {
+  @include abs.bgInner("../assets/img-newsletter.jpg");
+}
+
+#inner_galleries {
+  @include abs.bgInner("../assets/img-galleries.jpg");
+}
+
+#inner_cookies {
+  @include abs.bgInner("../assets/img-cookies.jpg");
+}
+
+/*-----------------Card img collections end -----------------*/

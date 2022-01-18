@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as var;
+
+@mixin flex($justify-content, $align-items, $flex-direction, $flex-wrap) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+  flex-wrap: $flex-wrap;
+}
+
+@mixin bgInner($route-img) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url($route-img);
+  background-size: 20rem;
+  &:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($route-img);
+    background-size: 21rem;
+  }
+}
+
+@mixin bgIntro($route-img) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.767)),
+    url($route-img);
+}

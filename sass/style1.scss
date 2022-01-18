@@ -1,46 +1,45 @@
-@import 'normalize';
-@import 'variables';
+@forward "../sass/compontents/normalize";
+@forward "../sass/compontents/nav";
+@forward "../sass/compontents/mainIntroGeneral";
+@forward "../sass/compontents/mainInnerGeneral";
+@forward "../sass/pages/collections/collections";
+@forward "../sass/pages/education/education";
+@forward "../sass/pages/books/books";
+@forward "../sass/pages/resources/resources";
+@forward "../sass/pages/books/booksDesign";
+@forward "../sass/pages/books/presentationBook";
+@forward "../sass/compontents/contact";
+@forward "../sass/compontents/footer";
+@forward "../sass/compontents/responsive";
 
 
-
-body {
-  padding: 0;
-  margin: 0;
-  font-family: $fontPrimary;
-  background-color: $colorPrimary;
-  /* max-width: 100%; */
-  height: 100%;
-}
-
-
-
-.father__container {
-  display: grid;
-  grid-template-rows: repeat(5, auto);
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "header"
-    "main"
-    "content"
-    "section"
-    "footer";
-}
-
-@import 'nav';
-@import 'mainIntroGeneral';
-@import 'mainInnerGeneral';
-@import 'collections';
-@import 'education'; 
-@import 'books';
-@import 'resources';
-@import 'booksDesign';
-@import 'presentationBook';
-@import 'contact'; 
-@import 'footer';
-@import 'responsive'; 
+@use '../sass/abstracts' as abs;
 
 
 
 
 
-
+// @import "../sass/compontents/mainIntroGeneral";
+// @import "../sass/compontents/mainInnerGeneral";
+// @import "../sass/pages/collections/collections";
+// @import "../sass/pages/education/education";
+// @import "../sass/pages/books/books";
+// @import "../sass/pages/resources/resources";
+// @import "../sass/pages/books/booksDesign";
+// @import "../sass/pages/books/presentationBook";
+// @import "../sass/compontents/contact";
+//  @import "../sass/compontentsfooter";
+// @import "normalize";
+// @import "variables";
+// @import "nav";
+// @import "mainIntroGeneral";
+// @import "mainInnerGeneral";
+// @import "collections";
+// @import "education";
+// @import "books";
+// @import "resources";
+// @import "booksDesign";
+// @import "presentationBook";
+// @import "contact";
+// @import "footer";
+// @import "responsive";

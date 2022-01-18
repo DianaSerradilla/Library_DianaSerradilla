@@ -1,0 +1,55 @@
+@use '../../abstracts/' as abs;
+
+/*-----------------Card img books init -----------------*/
+#inner_books {
+  margin-top: 7em;}
+
+#inner_design {
+  @include abs.bgInner("../assets/img-design.jpg");
+}
+
+#inner_front {
+  @include abs.bgInner("../assets/img-front.jpg");
+}
+
+#inner_back {
+  @include abs.bgInner("../assets/img-back.jpg");
+}
+
+#inner_security {
+  @include abs.bgInner("../assets/img-security.jpg");
+}
+
+#inner_full {
+  @include abs.bgInner("../assets/img-full.jpg");
+}
+
+#inner_2D {
+  @include abs.bgInner("../assets/img-2D.jpg");
+}
+
+#inner_3D {
+  @include abs.bgInner("../assets/img-3D.jpg");
+}
+
+#inner_photography {
+  @include abs.bgInner("../assets/img-photography.jpg");
+}
+
+#inner_film {
+  @include abs.bgInner("../assets/img-film.jpg");
+}
+
+#inner_marketing {
+  @include abs.bgInner("../assets/img-marketing.jpg");
+}
+
+#inner_uxui {
+  @include abs.bgInner("../assets/img-uxui.jpg");
+}
+
+#inner_other {
+  @include abs.bgInner("../assets/img-otherB.jpg");
+}
+
+/*-----------------Card img education end -----------------*/
