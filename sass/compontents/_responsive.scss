@@ -2,65 +2,89 @@
 @use "../abstracts/" as abs;
 
 @media screen and (max-width: 1200px) {
-  .contact__map {
-    display: none;
+  img {
+    max-width: 100%;
   }
-  hr {
-    width: 80vh;
+  /*----------------cards init--------------*/
+  .inner__cards--ul {
+    margin-right: 0px;
+    margin-left: 0px;
   }
+  /*----------------cards end--------------*/
 
-  .nav__menu--items {
-    width: 100%;
-    height: 100vh;
-    ul {
-      width: 90%;
-    }
-    ul li {
-      padding: 0;
-    }
-    ul li a {
-      font-size: 15px;
-      padding: 0;
-    }
-  }
-
+  /*----------------prsentation book init--------------*/
   .presentation {
     flex-direction: column;
   }
-
-  img {
-    max-width: 100%;
+  /*----------------prsentation book end--------------*/
+  /*----------------footer init--------------*/
+  footer {
+    position: relative;
+  }
+  /*----------------footer end--------------*/
+  /*----------------contact init--------------*/
+  .contact__map {
+    display: none;
   }
   .container__contact {
     justify-content: flex-start;
     align-items: center;
   }
-
-  footer {
-    position: relative;
-  }
+  /*----------------contact end--------------*/
 }
 
 @media screen and (max-width: 768px) {
-  .nav__menu--items {
-    width: 100%;
-    height: 100vh;
-    ul {
-      padding-left: 15px;
-      width: 90%;
-    }
-    ul li {
-      padding: 0;
-    }
-    ul li a {
-      font-size: 15px;
-      padding: 0;
-    }
+  img {
+    max-width: 100%;
+  }
+  /*----------------nav init--------------*/
+
+  .menu {
+    display: block;
+  }
+  .bodyShow {
+    overflow: hidden;
   }
 
-  .nav__box {
-    z-index: 10000000;
+  .nav-ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    transition: all 0.2s ease;
   }
+
+  .nav-ul.show {
+    display: flex;
+    align-items: flex-end;
+    width: 90%;
+    height: 80vh;
+    background-color: abs.color(abs.$primaryColor, "base");
+    transition: all 0.2s ease;
+  }
+
+  .nav-ul li a {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 3em;
+  }
+
+  .lineV {
+    display: none;
+  }
+
+  .lineH {
+    margin-top: 1em;
+  }
+
+  .lineH-s {
+    width: 75%;
+  }
+
+  /*----------------nav end--------------*/
+
+  /*----------------main init--------------*/
 
   .title__hidden {
     display: inline;
@@ -70,13 +94,8 @@
     display: none;
   }
 
-  .nav__box:hover > .nav__box--search {
-    width: 95px;
-    padding: 0 6px;
-  }
-
   .intro__title {
-    font-size: 1rem;
+    font-size: 1.9rem;
     letter-spacing: 20px;
   }
 
@@ -88,13 +107,25 @@
     font-size: 0.8rem;
   }
 
-  /* .inner__cards--ul {
-    padding: 0;
-  } */
-
-  hr {
-    width: 80%;
+  .input {
+    width: 10em;
   }
+
+  /*----------------main end--------------*/
+
+  .inner__cards--ul {
+    font-size: abs.size("s");
+  }
+
+  .inner__title {
+    font-size: abs.size("s") + 0.5em;
+  }
+
+  .button {
+    font-size: abs.size("xs") + 0.2em;
+  }
+  /*----------------contact init--------------*/
+
   #contact {
     margin: 0.2em auto 2.5rem;
     display: block;
@@ -114,16 +145,27 @@
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
+    border-radius: 0;
   }
 
   .contact__social {
     display: flex;
     flex-direction: row;
+    border-radius: 0;
   }
+
+  .container__contact {
+    margin-right: 0em;
+  }
+  /*----------------contact end--------------*/
+  /*----------------footer init--------------*/
 
   .footer-copy p {
     font-size: 0.4rem;
   }
+  /*----------------footer end--------------*/
+
+  /*----------------404 init--------------*/
 
   #title__construction {
     font-size: 1rem;
@@ -143,6 +185,9 @@
       letter-spacing: 1px;
     }
   }
+  /*----------------404 end--------------*/
+
+  /*----------------presentation book init--------------*/
 
   .captures {
     margin: 20px;
@@ -156,6 +201,11 @@
   .presentation__box div p {
     font-size: 0.8rem;
   }
+
+  /*----------------presentation book end--------------*/
+
+  /*----------------inner init--------------*/
+
   #description__books {
     font-size: 10px;
     margin: 10px;
@@ -183,9 +233,21 @@
   #inner__resources {
     margin-top: 1em;
   }
+
+  /*----------------inner end--------------*/
 }
 
 @media screen and (max-width: 480px) {
+  /*----------------nav init--------------*/
+
+  .logo {
+    min-width: 50%;
+  }
+
+  /*----------------nav end--------------*/
+
+  /*----------------main init--------------*/
+
   .intro__title {
     font-size: 1rem;
   }
@@ -198,6 +260,10 @@
     font-size: 0.5rem;
   }
 
+  /*----------------main end--------------*/
+
+  /*----------------404 init--------------*/
+
   #title__construction {
     font-size: 0.7rem;
   }
@@ -205,10 +271,7 @@
   #description__construction {
     font-size: 0.4rem;
   }
-
-  img {
-    max-width: 100%;
-  }
+  /*----------------404 end--------------*/
 }
 
 /*-----------------Responisve end -----------------*/

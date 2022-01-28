@@ -1,4 +1,4 @@
-@use '../../abstracts/' as abs;
+@use "../../abstracts/" as abs;
 /*-----------------Presentation book initi -----------------*/
 
 #books_section {
@@ -19,26 +19,22 @@
 }
 
 .presentation {
-  @include abs.flex(center,center,row,nowrap);
+  @include abs.flex(center, center, row, nowrap);
   margin-top: 50px;
   grid-area: content;
-   figure img {
-  width: 800px;
+  figure img {
+    width: 800px;
+  }
 }
-}
-
-
 
 .presentation__box {
-  @include abs.flex(center,center,column,nowrap);
-   div p {
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-bottom: 50px;
+  @include abs.flex(center, center, column, nowrap);
+  div p {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
 }
-}
-
-
 
 /* .buttons_internal {
   display: flex;
@@ -86,33 +82,28 @@
   -ms-transition: all 0.2s ease;
   transition: all 0.2s ease;
   &:hover {
-  top: -10px;
-  box-shadow: 0px 10px 10px rgba(15, 15, 15, 0.1);
-  -webkit-transform: rotateX(20deg);
-  -moz-transform: rotateX(20deg);
-  -ms-transform: rotateX(20deg);
-  transform: rotateX(20deg);
+    top: -10px;
+    box-shadow: 0px 10px 10px rgba(15, 15, 15, 0.1);
+    -webkit-transform: rotateX(20deg);
+    -moz-transform: rotateX(20deg);
+    -ms-transform: rotateX(20deg);
+    transform: rotateX(20deg);
   }
   &:active {
-  top: 0px;
-  box-shadow: 0px 0px 0px rgba(15, 165, 60, 0);
-   background: rgb(12, 12, 12);
-
+    top: 0px;
+    box-shadow: 0px 0px 0px rgba(15, 165, 60, 0);
+    background: rgb(12, 12, 12);
+  }
 }
-}
-
-
-
 
 #button__return {
   margin-top: 30px;
 }
 
 .presentation__buttons {
-  @include abs.flex(space-around,center,row,nowrap);
+  @include abs.flex(space-around, center, row, nowrap);
   width: 200px;
   gap: 20px;
-  
 }
 
 .presentation__buttons a,
@@ -122,20 +113,17 @@
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
-  letter-spacing: 4px;
   font-weight: 500;
 }
 
 .captures {
   margin-top: 100px;
   margin-bottom: 60px;
-  @include abs.flex(center,center,column,nowrap);
+  @include abs.flex(center, center, column, nowrap);
   figure img {
-  width: 500px;
+    width: 500px;
+  }
 }
-}
-
-
 
 #captures {
   grid-area: capture;

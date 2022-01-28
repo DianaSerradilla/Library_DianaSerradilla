@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+    <!-- --------------META Seo----------- -->
+    <meta name="author" content="Diana Serradilla" />
+    <meta name="copyright" content=" Copyright. All Rights Reserved Designed by DianaSerradilla" />
+    <meta name="description"
+        content="Library es una web pensada especializamente para la organización personal de recursos. También es una colección de maquetas, mockups, ilustraciones, libros, snipets, templates, resúmes y mucho más." />
+    <meta name="keywords"
+        content="Library, Libreria, recursos, gráficos, frontend, mokcups, Photoshop,Illustrator,HTML,CSS,JS,Bootstrp,Backend,edicion, themes, programacion, codigo">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +20,7 @@
     <!-- --------------Icons----------- -->
     <script src="https://kit.fontawesome.com/8154432079.js" crossorigin="anonymous"></script>
     <!-- --------------Favicon----------- -->
-    <link rel="icon" type="image/x-icon" href="assets/library-favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/logo-favicon.png">
     <!-- --------------Fuentes----------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,46 +38,70 @@
 
 </head>
 
-<body>
-    <div class="father__container">
+<body id="body" class="body">
+    <!-- ------colocados todos los alt en las imagenes------ -->
 
+    <div class="father__container">
         <!-- ----------------Nav init---------------- -->
-        <header id="header">
-            <div class="nav">
-                <div class="nav__menu">
-                    <input type="checkbox" id="nav" class="hidden">
-                    <label for="nav" class="nav__menu--btn animate__animated  animate__backInLeft">
-                        <i class="fas fa-bars nav__menu--btn-i"></i>
-                    </label>
-                    <nav class="nav__menu--items">
-                        <ul>
+
+        <header>
+            <nav>
+
+
+                <a href="index.html">
+                    <div id="logo" "> </div>
+
+                </a>
+
+                <button class=" menu"
+                        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                        aria-label="Main Menu" id="hamburger">
+                        <svg viewBox="0 0 100 100">
+                            <path class="line line1"
+                                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="line line2" d="M 20,50 H 80" />
+                            <path class="line line3"
+                                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                        </button>
+
+                        <ul class="nav-ul" id="nav-ul">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="pages/collections.html">Collections</a></li>
-                            <li><a href="pages/education.html">Education Channels</a></li>
-                            <li><a href="pages/books.html">Books</a></li>
-                            <li><a href="pages/resources.html">Resources pages</a></li>
+                            <div class="lineV"></div>
+                            <li><a href="./pages/collections.html">Collections</a></li>
+                            <li><a href="./pages/education.html">Education Channels</a></li>
+                            <li><a href="./pages/resources.html">Resources</a></li>
+                            <li><a href="./pages/books.html">Books</a></li>
                         </ul>
-                    </nav>
-                </div>
-                <div class="nav__title">
-                    <a href="index.html">
-                        <h2 class="title__hidden animate__animated animate__backInDown">LB</h2>
-                        <h2 class="title__nhidden animate__animated animate__backInDown">Library</h2>
-                    </a>
-                </div>
-                <div class="nav__box animate__animated  animate__backInRight">
-                    <input class="nav__box--search " type="text" name="search">
-                    <a href="#"><i class="fas fa-search nav__box--btn"></i></a>
-                </div>
-            </div>
+            </nav>
+            <div class="lineH"></div>
+
         </header>
         <!-- ----------------Nav end---------------- -->
+
         <!-- ----------------Main init---------------- -->
-        <main class="intro animate__animated animate__fadeIn" id="intro__index">
+        <main class="intro animate__animated animate__fadeIn">
+
             <div class="intro__box">
-                <h1 class="intro__title ">LIBRARY</h1>
-                <p class="intro__description">graphics resources and code snippets</p>
-                <p class="intro__date">13 de dicembre 2021</p>
+                <h1 class="intro__title">LIBRARY</h1>
+                <h2 class="intro__description">graphics resources and code snippets</h2>
+                <div class="fecha">
+                    <p class="dia intro__date" id="dia"></p>
+                    <p class="intro__date">de</p>
+                    <p class="mes intro__date" id="mes"></p>
+                    <p class="intro__date">del</p>
+                    <p class="year intro__date" id="year"></p>
+                </div>
+                <div class="search">
+                    <input type="text" name="" id="" class="input">
+                    <div class="imginput">
+                        <a href="">
+                            <div id="lupa"></div>
+                        </a>
+                    </div>
+
+                </div>
+
             </div>
 
         </main>
@@ -78,6 +109,8 @@
         <!-- ----------------Main End---------------- -->
         <!-- ----------------Collections init---------------- -->
         <section class="inner">
+            <div class="lineH lineH-s"></div>
+
             <div class="inner__title animate__animated animate__fadeInLeftBig">
                 <a href="pages/collections.html">Collections</a>
             </div>
@@ -85,7 +118,7 @@
                 <ul class="inner__cards--ul">
                     <li>
                         <figure>
-                            <a href="pages/construction.html"><img src="assets/img-preloader.png" alt="Preloader"></a>
+                            <a href="pages/construction.html"><img src="assets/img-preloader.jpg" alt="Preloader"></a>
                         </figure>
                         <div class="inner__cards--boxInfo">
                             <div>
@@ -98,7 +131,7 @@
                     </li>
                     <li>
                         <figure>
-                            <a href="pages/construction.html"><img src="assets/img-portfolio.jpg" alt="portfolio"></a>
+                            <a href="pages/construction.html"><img src="assets/img-portfolio1.jpg" alt="portfolio"></a>
                         </figure>
                         <div class="inner__cards--boxInfo ">
                             <div>
@@ -127,7 +160,7 @@
                     </li>
                     <li>
                         <figure>
-                            <a href="pages/construction.html"><img src="assets/img-search.jpg" alt="Search"></a>
+                            <a href="pages/construction.html"><img src="assets/img-search1.jpg" alt="Search"></a>
                         </figure>
                         <div class="inner__cards--boxInfo">
                             <div>
@@ -139,9 +172,16 @@
                         </div>
                     </li>
                 </ul>
+
+                <a href="pages/collections.html" class="button">
+                    <div>View all</div>
+                    <div>
+                        <img src="/assets/arrow.svg" alt="arrow">
+                    </div>
+                </a>
             </div>
 
-            <hr>
+            <div class="lineH lineH-s"></div>
             <!-- ----------------Collections end---------------- -->
 
             <!-- ----------------Education init---------------- -->
@@ -153,7 +193,7 @@
                 <ul class="inner__cards--ul row d-flex justify-content-center flex-wrap align-items-center">
                     <li>
                         <figure>
-                            <a href="https://platzi.com/" target="_blank"><img src="assets/img-platzi.png"
+                            <a href="https://platzi.com/" target="_blank"><img src="assets/img-platzi.jpg"
                                     alt="platzi"></a>
                         </figure>
                         <div class="inner__cards--boxInfo">
@@ -169,7 +209,7 @@
 
                         <figure>
                             <a href="https://www.youtube.com/c/ProgramadorX" target="_blank"><img
-                                    src="assets/img-programadorX.png" alt="programdorx"></a>
+                                    src="assets/img-programadorX.jpg" alt="programdorx"></a>
                         </figure>
                         <div class="inner__cards--boxInfo">
                             <div>
@@ -214,9 +254,16 @@
 
                     </li>
                 </ul>
+                <a href="pages/education.html" class="button">
+                    <div>View all</div>
+                    <div>
+                        <img src="/assets/arrow.svg" alt="arrow">
+                    </div>
+                </a>
             </div>
 
-            <hr>
+            <div class="lineH lineH-s"></div>
+
             <!-- ----------------Colecctions end---------------- -->
 
             <!-- ----------------Books init---------------- -->
@@ -229,11 +276,11 @@
                     <li>
 
                         <figure>
-                            <a href="pages/construction.html"><img src="assets/img-bookjs.png" alt="Javascript"></a>
+                            <a href="pages/construction.html"><img src="assets/img-bookjs.jpg" alt="Javascript"></a>
                         </figure>
                         <div class="inner__cards--boxInfo">
                             <div>
-                                <h2>FrontEnd Javascript</h2>
+                                <h2>Aprendiendo Javascript</h2>
                             </div>
                             <div>
                                 <p>Lorem ipsum dolor sit amet.</p>
@@ -244,7 +291,7 @@
                     <li>
 
                         <figure>
-                            <a href="pages/construction.html"><img src="assets/img-bookphp.png" alt="Php"></a>
+                            <a href="pages/construction.html"><img src="assets/img-bookphp.jpg" alt="Php"></a>
                         </figure>
                         <div class="inner__cards--boxInfo">
                             <div>
@@ -259,12 +306,12 @@
                     <li>
 
                         <figure>
-                            <a href="pages/construction.html"><img src="assets/img-bookPhotoshop.png"
-                                    alt="Photoshop"></a>
+                            <a href="pages/construction.html"><img src="assets/img-bookElOjodelF.jpg"
+                                    alt="ElOjoDelFotografo"></a>
                         </figure>
                         <div class="inner__cards--boxInfo">
                             <div>
-                                <h2>Design Photoshop</h2>
+                                <h2>El ojo del fotógrafo</h2>
                             </div>
                             <div>
                                 <p>Lorem ipsum dolor sit amet.</p>
@@ -275,7 +322,7 @@
                     <li>
 
                         <figure>
-                            <a href="pages/construction.html"><img src="assets/img-bookPhotography.png"
+                            <a href="pages/construction.html"><img src="assets/img-bookPhotography.jpg"
                                     alt="Photography"></a>
                         </figure>
                         <div class="inner__cards--boxInfo">
@@ -288,8 +335,15 @@
                         </div>
                     </li>
                 </ul>
+                <a href="pages/books.html" class="button">
+                    <div>View all</div>
+                    <div>
+                        <img src="/assets/arrow.svg" alt="arrow">
+                    </div>
+                </a>
             </div>
-            <hr>
+            <div class="lineH lineH-s"></div>
+
             <!-- ----------------Books end---------------- -->
             <!-- ----------------Resources init---------------- -->
             <div class="inner__title animate__animated animate__fadeInLeftBig">
@@ -301,7 +355,7 @@
 
                         <figure>
                             <a href="https://www.ls.graphics/free-mockups" target="_blank"><img
-                                    src="assets/img-freemockup.png" alt="lsGraphics"></a>
+                                    src="assets/img-freemockup.jpg" alt="lsGraphics"></a>
                         </figure>
                         <div class="inner__cards--boxInfo">
                             <div>
@@ -316,7 +370,7 @@
                     <li>
 
                         <figure>
-                            <a href="https://www.pexels.com/es-es/" target="_blank"><img src="assets/img-pexels.png"
+                            <a href="https://www.pexels.com/es-es/" target="_blank"><img src="assets/img-pexels.jpg"
                                     alt="Pexels"></a>
                         </figure>
                         <div class="inner__cards--boxInfo">
@@ -333,7 +387,7 @@
 
                         <figure>
                             <a href="https://tools.pingdom.com/#5f4a7c8d02400000" target="_blank"><img
-                                    src="assets/img-pingdom.png" alt="Pingdom"></a>
+                                    src="assets/img-pingdom.jpg" alt="Pingdom"></a>
                         </figure>
                         <div class="inner__cards--boxInfo">
                             <div>
@@ -347,7 +401,7 @@
                     <li>
                         <figure>
                             <a href="https://filmstock.wondershare.com/free.html" target="_blank"><img
-                                    src="assets/img-filmstock.png" alt="filmstock"></a>
+                                    src="assets/img-filmstock.jpg" alt="filmstock"></a>
                         </figure>
                         <div class="inner__cards--boxInfo">
                             <div>
@@ -359,8 +413,15 @@
                         </div>
                     </li>
                 </ul>
+                <a href="pages/resources.html" class="button">
+                    <div>View all</div>
+                    <div>
+                        <img src="/assets/arrow.svg" alt="arrow">
+                    </div>
+                </a>
             </div>
-            <hr>
+            <div class="lineH lineH-s"></div>
+
 
         </section>
 
@@ -379,7 +440,7 @@
                 </div>
                 <div class="contact__box">
                     <div class="contact__box--heading">
-                        <h3>Contact</h3>
+                        <h3 class="contact__title">CONTACT</h3>
                     </div>
                     <div class="contact__inputs">
                         <input type="text" name="Name" placeholder="Full name">
@@ -409,6 +470,12 @@
         </section>
         <!-- ----------------Footer end---------------- -->
     </div>
+
+    <script src="js/logo.js"></script>
+    <script src="js/lupa.js"></script>
+    <script src="js/script.js"></script>
+
+
 
 
 </body>

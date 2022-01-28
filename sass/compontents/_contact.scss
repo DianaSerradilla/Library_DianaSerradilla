@@ -5,11 +5,13 @@
   @include abs.flex(center, center, row, nowrap);
   grid-area: section;
   width: auto;
+ margin-right: 10em;
 }
 
 .contact__social {
   @include abs.flex(center, center, column, nowrap);
   background: #ffffffff;
+  border-radius: 20px 0px 0px 20px;
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
   a {
     padding: 20px;
@@ -33,6 +35,7 @@
 
 .contact__box {
   width: 300px;
+  border-radius: 20px;
   background: #202121;
   @include abs.flex(center, center, column, nowrap);
   padding: 30px 30px;
@@ -41,8 +44,9 @@
 
 .contact__box--heading h3 {
   color: #e7eef3;
-  font-size: 2rem;
+  font-size: 1.2rem;
   margin: 0;
+  font-weight: 100;
 }
 
 .contact__inputs {
@@ -103,9 +107,12 @@
 }
 
 .contact__map {
-  filter: grayscale(0.2);
+  filter: grayscale(0.5);
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
   border: 2px solid #ffff;
+  
 }
+
+
 
 /*-----------------Contact end -----------------*/

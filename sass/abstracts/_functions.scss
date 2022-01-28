@@ -1,6 +1,17 @@
 //------------function
 @use "../abstracts/variables" as var;
 
+//-----------------------function para peso de fuentes
 @function weigth($weight-name) {
   @return map-get(var.$font-weight, $weight-name);
+}
+
+//-----------------------function para colores
+@function color($map-color, $variant) {
+  @return map-get($map-color, $variant);
+}
+
+//-----------------------function para tamaño de fuentes
+@function size($size) {
+  @return map-get(var.$font-size, $size);
 }

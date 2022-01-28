@@ -10,6 +10,10 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -21,7 +25,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: abs.$fontPrimary;
-  background-color: abs.$colorPrimary;
+  background-color: abs.color(abs.$primaryColor, "base");
   /* max-width: 100%; */
   height: 100%;
 }
@@ -167,6 +171,7 @@ sup {
 
 img {
   border-style: none;
+  // max-width: 100%;
 }
 
 /* Forms

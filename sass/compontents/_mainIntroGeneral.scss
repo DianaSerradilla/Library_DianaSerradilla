@@ -2,45 +2,14 @@
 
 /*-----------------Main init -----------------*/
 
-#intro__index {
-  @include abs.bgIntro("../assets/intro-egg.jpg");
-}
-
-#intro__books {
-  @include abs.bgIntro("../assets/intro-books.jpg");
-}
-
-#intro__collections {
-  @include abs.bgIntro("../assets/intro-collections.jpg");
-  height: 400px;
-}
-
-#intro__construction {
-  @include abs.bgIntro("../assets/intro-contruction.jpg");
-  height: 100vh;
-}
-
-#intro__education {
-  @include abs.bgIntro("../assets/intro-education.jpg");
-}
-
-#intro__resources {
-  @include abs.bgIntro("../assets/intro-resources.jpg");
-  height: 400px;
-}
-#intro__designBooks {
-  @include abs.bgIntro("../assets/intro-designBooks.jpg");
-  height: 300px;
-}
-#intro__pages {
-  @include abs.bgIntro("../assets/intro-pages.jpg");
-  height: 300px;
-}
-
 .intro {
   height: 500px;
-  background-position: center;
-  background-size: cover;
+  // background-position: center;
+  // background-size: cover;
+  // background: {
+  //   position: center;
+  //   size: cover;
+  // }
   @include abs.flex(center, center, column, nowrap);
   /* -------------grid--------- */
   grid-area: main;
@@ -52,25 +21,45 @@
 }
 
 .intro__title {
-  color: white;
+  color: abs.color(abs.$secodaryColor, "base");
   margin: 0;
-  font-size: 50px;
-  letter-spacing: 35px;
+  font-size: abs.size("xxxl") + abs.size("xxl");
+  letter-spacing: 45px;
   font-weight: abs.weigth("regular");
+  margin-left: 1em;
 }
 .intro__description {
-  color: white;
-  font-size: 18px;
+  color: abs.color(abs.$secodaryColor, "base");
+  font-size: abs.size("m");
   font-weight: abs.weigth("regular");
+  margin-bottom: 0;
+}
+
+#logo {
+  width: 3em;
+  height: auto;
+}
+
+#lupa {
+  width: 2em;
+  height: auto;
 }
 
 .intro__date {
-  color: white;
-  font-size: 15px;
+  color: abs.color(abs.$secodaryColor, "hover");
+  font-size: abs.size("l");
+}
+
+.fecha {
+  @include abs.flex(center, center, row, nowrap);
+  gap: 0.2em;
+  width: 100%;
+  font-size: abs.size("xs") + 0.3;
+  margin: 0;
 }
 
 .intro_botton {
-  background: white;
+  background: abs.color(abs.$primaryColor, "base");
   @include abs.flex(center, center, row, nowrap);
   width: 120px;
   height: 30px;
@@ -83,10 +72,35 @@
   -o-border-radius: 20px;
 }
 .intro__enlance {
-  color: grey;
+  color: abs.color(abs.$secodaryColor, "lines");
   &:hover {
-    color: abs.$colorSecondary;
+    color: abs.color(abs.$secodaryColor, "base");
   }
+}
+
+.search {
+  @include abs.flex(center, center, row, nowrap);
+  margin-top: 1em;
+  margin-left: 3.5em;
+}
+
+.input {
+  width: 30em;
+  height: 2em;
+  border-radius: 20px;
+  outline: none;
+  align-self: center;
+  border: 1px hsla(0, 0%, 58.8%, 0.21);
+  border-radius: 80px;
+  background-color: abs.color(abs.$primaryColor, "input");
+  box-shadow: 0 1px 5px -2px rgba(0, 0, 0, 0.23);
+  padding: 0 1em;
+  color: abs.color(abs.$secodaryColor, "text");
+}
+
+.imginput {
+  position: relative;
+  right: 2em;
 }
 
 /*-----------------Main end -----------------*/

@@ -1,6 +1,5 @@
 /*-----------------Card img collections init -----------------*/
-@use '../../abstracts/' as abs;
-
+@use "../../abstracts/" as abs;
 
 #inner_collections {
   margin-top: 4em;
@@ -19,7 +18,7 @@
 }
 
 #inner_hovers {
-  @include abs.bgInner("../assets/img-hover.jpeg");
+  @include abs.bgInner("../assets/img-hover.jpg");
 }
 
 #inner_transitions {
@@ -27,7 +26,7 @@
 }
 
 #inner_preloader {
-  @include abs.bgInner("../assets/img-preloader.png");
+  @include abs.bgInner("../assets/img-preloader.jpg");
 }
 
 #inner_portfolio {

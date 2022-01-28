@@ -2,7 +2,7 @@
 /*-----------------FOOTER INIT -----------------*/
 
 footer {
-  background-color: #fdfdfd;
+  background-color: abs.color(abs.$primaryColor, "input");
   @include abs.flex(center, center, row, nowrap);
   height: 50px;
   width: 100%;
@@ -15,7 +15,7 @@ footer {
 }
 
 .footer-copy p {
-  font-size: 10px;
+  font-size: abs.size("s") - 0.4em;
 }
 
 /*-----------------FOOTER END -----------------*/

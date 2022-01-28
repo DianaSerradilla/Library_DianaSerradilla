@@ -1,7 +1,31 @@
-//-----------------colors
 $colorPrimary: #f4f7f6;
+//-----------------colors
 $colorSecondary: #202121;
 $colorNavHover: #373f40;
+
+$primaryColor: (
+  "base": #f2f2f2,
+  "hover": #b3b2b2,
+  "active": #dbdbdb,
+  "transparency": rgba(242, 242, 242, 0.2),
+  "input": white,
+);
+
+$secodaryColor: (
+  "base": #0d0d0d,
+  "hover": #5f5f5f,
+  "active": #0d0d0d,
+  "lines": #d9d9d9,
+  "transparency": null,
+  "text": #555555,
+);
+
+$thirdColor: (
+  "base": #bfa18f,
+  "hover": #9b8477,
+  "active": #bfa18f,
+  "transparency": null,
+);
 
 //-----------fuentes
 $fontPrimary: "Inter", sans-serif;
@@ -21,4 +45,14 @@ $font-weight: (
 
 //-------------- maps font size
 
+$font-size: (
+  "xxxs": 0.3em,
+  "xs": 0.5em,
+  "s": 1em,
+  "m": 1.2em,
+  "l": 1.4em,
+  "xl": 1.6em,
+  "xxl": 1.8em,
+  "xxxl": 2em,
+);
 //---------mixins
