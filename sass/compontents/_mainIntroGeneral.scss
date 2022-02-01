@@ -6,13 +6,14 @@
   height: 500px;
   // background-position: center;
   // background-size: cover;
-  // background: {
-  //   position: center;
-  //   size: cover;
-  // }
+   background: {
+    image: url("../../assets/bgintro.jpg");
+    position: center;
+    size: cover;
+  }
   @include abs.flex(center, center, column, nowrap);
   /* -------------grid--------- */
-  grid-area: main;
+  grid-area: main;  
 }
 
 .intro__box {
@@ -21,7 +22,7 @@
 }
 
 .intro__title {
-  color: abs.color(abs.$secodaryColor, "base");
+  color: abs.color(abs.$primaryColor, "base");
   margin: 0;
   font-size: abs.size("xxxl") + abs.size("xxl");
   letter-spacing: 45px;
@@ -29,7 +30,7 @@
   margin-left: 1em;
 }
 .intro__description {
-  color: abs.color(abs.$secodaryColor, "base");
+  color: abs.color(abs.$primaryColor, "base");
   font-size: abs.size("m");
   font-weight: abs.weigth("regular");
   margin-bottom: 0;
@@ -46,7 +47,7 @@
 }
 
 .intro__date {
-  color: abs.color(abs.$secodaryColor, "hover");
+  color: abs.color(abs.$primaryColor, "hover");
   font-size: abs.size("l");
 }
 

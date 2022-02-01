@@ -46,11 +46,17 @@ nav {
       bottom: 0;
       left: 0;
       inset: 0 0 0 0;
-      background: abs.color(abs.$thirdColor, "base");
+      // background: abs.color(abs.$thirdColor, "base");
+      background-color: abs.color(abs.$secodaryColor,"base");
       z-index: -1;
       transition: transform 0.3s ease;
       border-radius: 10px;
       margin: -6px;
+    }
+
+    &:hover{
+      color: abs.color(abs.$primaryColor,"base");
+
     }
   }
 }
@@ -70,6 +76,10 @@ nav {
 .lineV {
   border-left: 1px solid abs.color(abs.$secodaryColor, "lines");
   height: 20px;
+}
+
+#lineA{
+  margin-top: 5em; 
 }
 
 .menu {

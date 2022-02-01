@@ -73,3 +73,4 @@ btn.addEventListener('mouseenter', function () {
 btn.addEventListener('mouseleave', function () {
   animationLupa.stop()
 })
+

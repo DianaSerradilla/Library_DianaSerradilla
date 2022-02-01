@@ -44,35 +44,35 @@
     <div class="father__container">
         <!-- ----------------Nav init---------------- -->
 
-        <header>
+        <header id="header">
             <nav>
 
 
                 <a href="index.html">
-                    <div id="logo" "> </div>
+                    <div id="logo"> </div>
 
                 </a>
 
                 <button class=" menu"
-                        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
-                        aria-label="Main Menu" id="hamburger">
-                        <svg viewBox="0 0 100 100">
-                            <path class="line line1"
-                                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                            <path class="line line2" d="M 20,50 H 80" />
-                            <path class="line line3"
-                                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                        </svg>
-                        </button>
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu" id="hamburger">
+                    <svg viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
 
-                        <ul class="nav-ul" id="nav-ul">
-                            <li><a href="index.html">Home</a></li>
-                            <div class="lineV"></div>
-                            <li><a href="./pages/collections.html">Collections</a></li>
-                            <li><a href="./pages/education.html">Education Channels</a></li>
-                            <li><a href="./pages/resources.html">Resources</a></li>
-                            <li><a href="./pages/books.html">Books</a></li>
-                        </ul>
+                <ul class="nav-ul" id="nav-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <div class="lineV"></div>
+                    <li><a href="./pages/collections.html">Collections</a></li>
+                    <li><a href="./pages/education.html">Education Channels</a></li>
+                    <li><a href="./pages/resources.html">Resources</a></li>
+                    <li><a href="./pages/books.html">Books</a></li>
+                </ul>
             </nav>
             <div class="lineH"></div>
 
@@ -84,7 +84,7 @@
 
             <div class="intro__box">
                 <h1 class="intro__title">LIBRARY</h1>
-                <h2 class="intro__description">graphics resources and code snippets</h2>
+                <h2 class="intro__description">All your requirements to work in one place</h2>
                 <div class="fecha">
                     <p class="dia intro__date" id="dia"></p>
                     <p class="intro__date">de</p>
@@ -109,23 +109,37 @@
         <!-- ----------------Main End---------------- -->
         <!-- ----------------Collections init---------------- -->
         <section class="inner">
-            <div class="lineH lineH-s"></div>
+            <div class="lineH lineH-s" id="lineA"></div>
 
-            <div class="inner__title animate__animated animate__fadeInLeftBig">
-                <a href="pages/collections.html">Collections</a>
+            <div class="container__text">
+                <div class="inner__title animate__animated animate__fadeInLeftBig">
+                    <a href="pages/collections.html">COLLECTIONS</a>
+                </div>
+                <div class="inner__description">
+                    Here you will find the largest number of reusable code snipets, as well as complete templates,
+                    developed in different
+                    technologies.
+
+                </div>
+                <a href="pages/collections.html" class="button">
+                    <div>View all</div>
+                    <div>
+                        <img src="/assets/arrow.svg" alt="arrow">
+                    </div>
+                </a>
             </div>
             <div class="inner__cards--container animate__animated animate__fadeInRightBig">
                 <ul class="inner__cards--ul">
                     <li>
                         <figure>
-                            <a href="pages/construction.html"><img src="assets/img-preloader.jpg" alt="Preloader"></a>
+                            <a href="pages/construction.html"><img src="assets/img-preloader1.jpg" alt="Preloader"></a>
                         </figure>
                         <div class="inner__cards--boxInfo">
                             <div>
                                 <h2>Preloader</h2>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Update 2 days ago </p>
                             </div>
                         </div>
                     </li>
@@ -138,7 +152,8 @@
                                 <h2>Portfolio photographer</h2>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Update 1 month</p>
+
                             </div>
                         </div>
 
@@ -153,7 +168,7 @@
                                 <h2>404 page illustration</h2>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Update 17 days ago</p>
                             </div>
                         </div>
 
@@ -167,18 +182,14 @@
                                 <h2>Search 3D</h2>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Update 3 months </p>
+
                             </div>
                         </div>
                     </li>
                 </ul>
 
-                <a href="pages/collections.html" class="button">
-                    <div>View all</div>
-                    <div>
-                        <img src="/assets/arrow.svg" alt="arrow">
-                    </div>
-                </a>
+
             </div>
 
             <div class="lineH lineH-s"></div>
@@ -186,8 +197,22 @@
 
             <!-- ----------------Education init---------------- -->
 
-            <div class="inner__title animate__animated animate__fadeInLeftBig">
-                <a href="pages/education.html">Education channels</a>
+            <div class="container__text">
+                <div class="inner__title animate__animated animate__fadeInLeftBig">
+                    <a href="pages/education.html">EDUCATION CHANNELS</a>
+                </div>
+                <div class="inner__description">
+                    The most complete collection of educational channels, both free and paid. You will have all kinds of
+                    courses within
+                    reach of a single click.
+
+                </div>
+                <a href="pages/collections.html" class="button">
+                    <div>View all</div>
+                    <div>
+                        <img src="/assets/arrow.svg" alt="arrow">
+                    </div>
+                </a>
             </div>
             <div class="inner__cards--container animate__animated animate__fadeInRightBig">
                 <ul class="inner__cards--ul row d-flex justify-content-center flex-wrap align-items-center">
@@ -201,7 +226,8 @@
                                 <h2>Platzi Academy</h2>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Annual payment
+                                </p>
                             </div>
                         </div>
                     </li>
@@ -216,7 +242,7 @@
                                 <h2>Programador X</h2>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Free courses</p>
                             </div>
                         </div>
 
@@ -232,7 +258,8 @@
                                 <h2>Crehana Academy</h2>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Annual payment
+                                </p>
                             </div>
                         </div>
 
@@ -248,18 +275,13 @@
                                 <h2>W3School Academy</h2>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Free courses</p>
                             </div>
                         </div>
 
                     </li>
                 </ul>
-                <a href="pages/education.html" class="button">
-                    <div>View all</div>
-                    <div>
-                        <img src="/assets/arrow.svg" alt="arrow">
-                    </div>
-                </a>
+
             </div>
 
             <div class="lineH lineH-s"></div>
@@ -268,8 +290,23 @@
 
             <!-- ----------------Books init---------------- -->
 
-            <div class="inner__title animate__animated animate__fadeInLeftBig">
-                <a href="pages/books.html">Books</a>
+            <div class="container__text">
+                <div class="inner__title animate__animated animate__fadeInLeftBig">
+                    <a href="pages/books.html">BOOKS</a>
+                </div>
+                <div class="inner__description">
+                    The most complete digital library. You will find all the books in different formats, as well as
+                    websites of other
+                    libraries.
+
+
+                </div>
+                <a href="pages/collections.html" class="button">
+                    <div>View all</div>
+                    <div>
+                        <img src="/assets/arrow.svg" alt="arrow">
+                    </div>
+                </a>
             </div>
             <div class="cards-container animate__animated animate__fadeInRightBig">
                 <ul class="inner__cards--ul row d-flex justify-content-center flex-wrap align-items-center">
@@ -283,7 +320,7 @@
                                 <h2>Aprendiendo Javascript</h2>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Carlos Azaustre - 512 pages</p>
                             </div>
                         </div>
 
@@ -298,7 +335,7 @@
                                 <h2>BackEnd PHP</h2>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Anonymous author - 63 pages</p>
                             </div>
                         </div>
 
@@ -314,7 +351,7 @@
                                 <h2>El ojo del fotógrafo</h2>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Michael Freeman - 80 pages</p>
                             </div>
                         </div>
 
@@ -330,24 +367,33 @@
                                 <h2>Photography</h2>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Blog del Fotógrafo - 105 pages</p>
                             </div>
                         </div>
                     </li>
                 </ul>
-                <a href="pages/books.html" class="button">
-                    <div>View all</div>
-                    <div>
-                        <img src="/assets/arrow.svg" alt="arrow">
-                    </div>
-                </a>
+
             </div>
             <div class="lineH lineH-s"></div>
 
             <!-- ----------------Books end---------------- -->
             <!-- ----------------Resources init---------------- -->
-            <div class="inner__title animate__animated animate__fadeInLeftBig">
-                <a href="pages/resources.html">Resources pages</a>
+            <div class="container__text">
+                <div class="inner__title animate__animated animate__fadeInLeftBig">
+                    <a href="pages/resources.html">RESOURCES PAGES</a>
+                </div>
+                <div class="inner__description">
+                    Digital resources of all kinds and tools to be able to work in different areas, categorized
+                    according to type.
+
+
+                </div>
+                <a href="pages/collections.html" class="button">
+                    <div>View all</div>
+                    <div>
+                        <img src="/assets/arrow.svg" alt="arrow">
+                    </div>
+                </a>
             </div>
             <div class="cards-container animate__animated animate__fadeInRightBig">
                 <ul class="inner__cards--ul row d-flex justify-content-center flex-wrap align-items-center">
@@ -362,7 +408,7 @@
                                 <h2>ls graphics | Free mokcups</h2>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Free and premium tools for graphic designers</p>
                             </div>
                         </div>
 
@@ -378,7 +424,7 @@
                                 <h2>Free photos and videos</h2>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Free stock photos and videos that you can use wherever you want.</p>
                             </div>
                         </div>
 
@@ -394,7 +440,8 @@
                                 <h2>Website Speed Test</h2>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Use this to analyze the load speed of your websites, and
+                                    learn how to make them faster.</p>
                             </div>
                         </div>
                     </li>
@@ -408,17 +455,12 @@
                                 <h2>Film Stock Free</h2>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Explore free video effects, stock videos, images, music, and sound effects on
+                                    Filmstock.</p>
                             </div>
                         </div>
                     </li>
                 </ul>
-                <a href="pages/resources.html" class="button">
-                    <div>View all</div>
-                    <div>
-                        <img src="/assets/arrow.svg" alt="arrow">
-                    </div>
-                </a>
             </div>
             <div class="lineH lineH-s"></div>
 
@@ -455,17 +497,48 @@
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </section>
+
         </div>
+        <div class="lineH lineH-s" id="lastLine"></div>
         <!-- ----------------Contac end---------------- -->
 
 
         <!-- ----------------Footer init---------------- -->
+
         <section>
             <footer>
-                <div class="footer-copy animate__animated animate__fadeInUp">
+                <div class="footerColumnL">
+                    <a href="#header">
+                        <img src="/assets/1080D.svg" alt="">
+                    </a>
+                    <p class="footerColumnL__text">Follow me</p>
+                    <div class="footerColumnL__social">
+
+                        <a href="https://www.instagram.com/laddy___di/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/DianaSerradilla" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/diana-serradilla/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.behance.net/serradilla7b58" target="_blank"><i
+                                class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+                <div class="lineVF"></div>
+
+                <ul class="footerColumnM">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./pages/collections.html">Collections</a></li>
+                    <li><a href="./pages/education.html">Education Channels</a></li>
+                    <li><a href="./pages/resources.html">Resources</a></li>
+                    <li><a href="./pages/books.html">Books</a></li>
+                </ul>
+                <div class="lineVF"></div>
+
+                <div class="footer-copy animate__animated animate__fadeInUp footerColumnR">
                     <p>© Copyright. All Rights Reserved
                         Designed by DianaSerradilla</p>
                 </div>
+
             </footer>
         </section>
         <!-- ----------------Footer end---------------- -->

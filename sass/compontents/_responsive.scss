@@ -5,38 +5,7 @@
   img {
     max-width: 100%;
   }
-  /*----------------cards init--------------*/
-  .inner__cards--ul {
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-  /*----------------cards end--------------*/
 
-  /*----------------prsentation book init--------------*/
-  .presentation {
-    flex-direction: column;
-  }
-  /*----------------prsentation book end--------------*/
-  /*----------------footer init--------------*/
-  footer {
-    position: relative;
-  }
-  /*----------------footer end--------------*/
-  /*----------------contact init--------------*/
-  .contact__map {
-    display: none;
-  }
-  .container__contact {
-    justify-content: flex-start;
-    align-items: center;
-  }
-  /*----------------contact end--------------*/
-}
-
-@media screen and (max-width: 768px) {
-  img {
-    max-width: 100%;
-  }
   /*----------------nav init--------------*/
 
   .menu {
@@ -45,7 +14,9 @@
   .bodyShow {
     overflow: hidden;
   }
-
+.nav{
+  width: 10px;
+}
   .nav-ul {
     display: none;
     width: 100%;
@@ -56,8 +27,8 @@
   .nav-ul.show {
     display: flex;
     align-items: flex-end;
-    width: 90%;
-    height: 80vh;
+    // width: 80%;
+    height: 100vh;
     background-color: abs.color(abs.$primaryColor, "base");
     transition: all 0.2s ease;
   }
@@ -83,8 +54,99 @@
   }
 
   /*----------------nav end--------------*/
+  /*----------------cards init--------------*/
+  .inner__cards--ul {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .inner__description{
+    font-size: 1em;
+    width: auto;
+    border: none;
+  }
+  /*----------------cards end--------------*/
+
+  /*----------------prsentation book init--------------*/
+  .presentation {
+    flex-direction: column;
+  }
+  /*----------------prsentation book end--------------*/
+  /*----------------footer init--------------*/
+  footer {
+    position: relative;
+  }
+  /*----------------footer end--------------*/
+  /*----------------contact init--------------*/
+  .contact__map {
+    display: none;
+  }
+  .container__contact {
+    justify-content: flex-start;
+    align-items: center;
+  }
+  /*----------------contact end--------------*/
+
+  /*----------------footer init--------------*/
+footer{
+  @include abs.flex(space-between, center, column, nowrap);
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+
+.lineVF, .footerColumnL__text{
+display: none;
+}
+
+
+
+.footerColumnL{
+  margin: 0m 0 1em 0;
+  a{
+    margin-top: 1.5em;
+  }
+  .footerColumnL__social{
+  margin: 0;
+  
+}
+}
+
+.footerColumnM{
+margin: 1em;
+padding: 1em;
+
+}
+.footerColumnR{
+  width: auto;
+  margin: 0;
+  p{
+          font-size: abs.size("l");
+
+  }
+}
+  /*----------------footer end--------------*/
+
+
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    max-width: 100%;
+  }
+ 
 
   /*----------------main init--------------*/
+
+  .intro {
+ 
+   background: {
+    image: url("../../assets/bgintroT.jpg");
+    position: center;
+    size: cover;
+  }
+
+}
 
   .title__hidden {
     display: inline;
@@ -111,6 +173,9 @@
     width: 10em;
   }
 
+  .search{
+    margin-left: 2em;
+  }
   /*----------------main end--------------*/
 
   .inner__cards--ul {
@@ -120,6 +185,8 @@
   .inner__title {
     font-size: abs.size("s") + 0.5em;
   }
+
+ 
 
   .button {
     font-size: abs.size("xs") + 0.2em;
@@ -162,6 +229,14 @@
 
   .footer-copy p {
     font-size: 0.4rem;
+  }
+
+  #lastLine{
+    display: none;
+  }
+
+  .footerColumnL__social{
+    margin-left: 0;
   }
   /*----------------footer end--------------*/
 
@@ -244,9 +319,64 @@
     min-width: 50%;
   }
 
+   /*----------------nav init--------------*/
+
+  .menu {
+    display: block;
+  }
+  .bodyShow {
+    overflow: hidden;
+  }
+
+  .nav-ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    transition: all 0.2s ease;
+  }
+
+  .nav-ul.show {
+    display: flex;
+    align-items: flex-end;
+    // width: 90%;
+    height: 100vh;
+    background-color: abs.color(abs.$primaryColor, "base");
+    transition: all 0.2s ease;
+  }
+
+  .nav-ul li a {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 3em;
+  }
+
+  .lineV {
+    display: none;
+  }
+
+  .lineH {
+    margin-top: 1em;
+  }
+
+  .lineH-s {
+    width: 75%;
+  }
+
+  /*----------------nav end--------------*/
   /*----------------nav end--------------*/
 
   /*----------------main init--------------*/
+
+  .intro {
+ 
+   background: {
+    image: url("../../assets/bgintroP.jpg");
+    position: center;
+    size: cover;
+  }
+}
 
   .intro__title {
     font-size: 1rem;
@@ -261,6 +391,8 @@
   }
 
   /*----------------main end--------------*/
+
+
 
   /*----------------404 init--------------*/
 
