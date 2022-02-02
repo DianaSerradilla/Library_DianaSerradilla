@@ -22,6 +22,12 @@
     width: 100%;
     flex-direction: column;
     transition: all 0.2s ease;
+    li a{
+    &:hover{
+      color: abs.color(abs.$secodaryColor,"hover");
+
+    }
+  }
   }
 
   .nav-ul.show {
@@ -113,15 +119,15 @@ display: none;
 }
 
 .footerColumnM{
-margin: 1em;
-padding: 1em;
+margin: 1em 0 0 0;
+padding: 1em 0 1em 0;
 
 }
 .footerColumnR{
   width: auto;
   margin: 0;
   p{
-          font-size: abs.size("l");
+          font-size: abs.size("s") - 0.3em;
 
   }
 }

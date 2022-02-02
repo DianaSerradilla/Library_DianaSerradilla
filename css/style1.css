@@ -498,7 +498,6 @@ nav {
 /*-----------------Main init -----------------*/
 .intro {
   height: 500px;
-  background-image: url("../../assets/bgintro.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -508,6 +507,14 @@ nav {
   flex-wrap: nowrap;
   /* -------------grid--------- */
   grid-area: main;
+}
+
+#intro__index {
+  background-image: url("../../assets/bgintro.jpg");
+}
+
+#intro__collections {
+  background-image: url("../../assets/bgintro-collections.jpg");
 }
 
 .intro__box {
@@ -1659,6 +1666,7 @@ footer {
   /* -------------grid------------ */
   grid-area: footer;
   margin: 0 10em 3em 10em;
+  margin-bottom: 0;
 }
 
 .footerColumnL {
@@ -1668,6 +1676,7 @@ footer {
   flex-direction: column;
   flex-wrap: nowrap;
   height: 100px;
+  margin-bottom: 2em;
 }
 .footerColumnL img {
   width: 50px;
@@ -1747,6 +1756,9 @@ footer {
     width: 100%;
     flex-direction: column;
     transition: all 0.2s ease;
+  }
+  .nav-ul li a:hover {
+    color: #5f5f5f;
   }
 
   .nav-ul.show {
@@ -1841,8 +1853,8 @@ footer {
   }
 
   .footerColumnM {
-    margin: 1em;
-    padding: 1em;
+    margin: 1em 0 0 0;
+    padding: 1em 0 1em 0;
   }
 
   .footerColumnR {
@@ -1850,7 +1862,7 @@ footer {
     margin: 0;
   }
   .footerColumnR p {
-    font-size: 1.4em;
+    font-size: 0.7em;
   }
 
   /*----------------footer end--------------*/

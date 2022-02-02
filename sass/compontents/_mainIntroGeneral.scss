@@ -7,7 +7,7 @@
   // background-position: center;
   // background-size: cover;
    background: {
-    image: url("../../assets/bgintro.jpg");
+    
     position: center;
     size: cover;
   }
@@ -16,6 +16,12 @@
   grid-area: main;  
 }
 
+#intro__index{
+  background-image: url("../../assets/bgintro.jpg");
+}
+#intro__collections{
+  background-image: url("../../assets/bgintro-collections.jpg");
+}
 .intro__box {
   @include abs.flex(center, center, column, nowrap);
   text-align: center;
