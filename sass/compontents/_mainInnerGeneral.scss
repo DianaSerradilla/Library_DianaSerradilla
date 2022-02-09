@@ -48,6 +48,7 @@ padding: 0.5em;
   margin-bottom: 3.125em;
   padding: 0.875em 1em;
   border: 1px solid abs.color(abs.$secodaryColor, "lines");
+  transition: border .3s;
   border-radius: 16px;
   background-color: hsla(0, 0%, 94.1%, 0.26);
   transition: 0.2s;
@@ -55,7 +56,12 @@ padding: 0.5em;
   text-decoration: none;
   div {
     padding-left: 0.625em;
-    font-size: abs.size("m");
+    font-size: abs.size("m");    
+  }
+  
+  &:hover{
+  border: 1px solid abs.color(abs.$secodaryColor,"active");
+
   }
 }
 

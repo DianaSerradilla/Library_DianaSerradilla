@@ -59,6 +59,15 @@
     width: 75%;
   }
 
+
+   .intro__title {
+      font-size: abs.size("xxxl") + 0.2em;
+
+    letter-spacing: 20px;
+  }
+
+  
+
   /*----------------nav end--------------*/
   /*----------------cards init--------------*/
   .inner__cards--ul {
@@ -144,23 +153,16 @@ padding: 1em 0 1em 0;
 
   /*----------------main init--------------*/
 
-  .intro {
- 
+  .intro { 
    background: {
-    image: url("../../assets/bgintroT.jpg");
     position: center;
     size: cover;
   }
 
+
 }
 
-  .title__hidden {
-    display: inline;
-  }
 
-  .title__nhidden {
-    display: none;
-  }
 
   .intro__title {
     font-size: 1.9rem;
@@ -375,14 +377,16 @@ padding: 1em 0 1em 0;
 
   /*----------------main init--------------*/
 
-  .intro {
- 
+  
+
+  .intro { 
    background: {
-    image: url("../../assets/bgintroP.jpg");
     position: center;
     size: cover;
   }
 }
+
+
 
   .intro__title {
     font-size: 1rem;

@@ -22,6 +22,18 @@
 #intro__collections{
   background-image: url("../../assets/bgintro-collections.jpg");
 }
+
+#intro__education{
+  background-image: url("../../assets/bgintro-education.jpg");
+}
+
+#intro__resources{
+  background-image: url("../../assets/bgintro-resources.jpg");
+}
+
+#intro__books{
+  background-image: url("../../assets/bgintro-books.jpg");
+}
 .intro__box {
   @include abs.flex(center, center, column, nowrap);
   text-align: center;
@@ -40,6 +52,7 @@
   font-size: abs.size("m");
   font-weight: abs.weigth("regular");
   margin-bottom: 0;
+  font-family: abs.$fontSecondary;
 }
 
 #logo {
@@ -53,7 +66,7 @@
 }
 
 .intro__date {
-  color: abs.color(abs.$primaryColor, "hover");
+  color: abs.color(abs.$primaryColor, "base");
   font-size: abs.size("l");
 }
 

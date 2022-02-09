@@ -517,6 +517,18 @@ nav {
   background-image: url("../../assets/bgintro-collections.jpg");
 }
 
+#intro__education {
+  background-image: url("../../assets/bgintro-education.jpg");
+}
+
+#intro__resources {
+  background-image: url("../../assets/bgintro-resources.jpg");
+}
+
+#intro__books {
+  background-image: url("../../assets/bgintro-books.jpg");
+}
+
 .intro__box {
   display: flex;
   justify-content: center;
@@ -540,6 +552,7 @@ nav {
   font-size: 1.2em;
   font-weight: 400;
   margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 #logo {
@@ -553,7 +566,7 @@ nav {
 }
 
 .intro__date {
-  color: #b3b2b2;
+  color: #f2f2f2;
   font-size: 1.4em;
 }
 
@@ -684,6 +697,7 @@ nav {
   margin-bottom: 3.125em;
   padding: 0.875em 1em;
   border: 1px solid #d9d9d9;
+  transition: border 0.3s;
   border-radius: 16px;
   background-color: rgba(240, 240, 240, 0.26);
   transition: 0.2s;
@@ -693,6 +707,9 @@ nav {
 .button div {
   padding-left: 0.625em;
   font-size: 1.2em;
+}
+.button:hover {
+  border: 1px solid #0d0d0d;
 }
 
 .button-presentation div {
@@ -1789,6 +1806,11 @@ footer {
     width: 75%;
   }
 
+  .intro__title {
+    font-size: 2.2em;
+    letter-spacing: 20px;
+  }
+
   /*----------------nav end--------------*/
   /*----------------cards init--------------*/
   .inner__cards--ul {
@@ -1874,17 +1896,8 @@ footer {
 
   /*----------------main init--------------*/
   .intro {
-    background-image: url("../../assets/bgintroT.jpg");
     background-position: center;
     background-size: cover;
-  }
-
-  .title__hidden {
-    display: inline;
-  }
-
-  .title__nhidden {
-    display: none;
   }
 
   .intro__title {
@@ -2091,7 +2104,6 @@ footer {
   /*----------------nav end--------------*/
   /*----------------main init--------------*/
   .intro {
-    background-image: url("../../assets/bgintroP.jpg");
     background-position: center;
     background-size: cover;
   }
