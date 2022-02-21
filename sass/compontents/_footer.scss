@@ -4,18 +4,15 @@
 footer {
     background-color: abs.color(abs.$primaryColor, "base");
 
-  @include abs.flex(space-between, center, row, nowrap);
+  @include abs.flex(space-evenly, center, row, nowrap);
   height: auto;
   width: 80%;
-  // bottom: 0;
-  // gap: 20em;
-  // position: absolute;
-  // z-index: 99999;
-  // bottom: 0;
   /* -------------grid------------ */
   grid-area: footer;
-  margin: 0 10em 3em 10em;
-  margin-bottom: 0;
+   margin: 0 auto;
+   margin-bottom: 0;
+
+
 }
 
 
@@ -62,11 +59,12 @@ footer {
 }
 
 .footerColumnR{
-  width:10em ;
-  margin-right: 5em;
+  width:15em ;
+  // margin-right: 5em;
   box-sizing: border-box;
   p{
       font-size: abs.size("s") - 0.4em;
+      
   }
 }
 .lineVF{

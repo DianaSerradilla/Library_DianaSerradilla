@@ -1,0 +1,14 @@
+@use "../abstracts/" as abs;
+
+.card__tittleMain{
+  color: abs.color(abs.$secodaryColor,"base");
+  font-size: abs.size("l");
+  &:hover{
+  color: abs.color(abs.$secodaryColor,"hover");
+
+  }
+}
+
+.cardBT{
+  width: 18em;
+}

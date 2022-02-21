@@ -6,8 +6,7 @@
   height: 500px;
   // background-position: center;
   // background-size: cover;
-   background: {
-    
+   background: {   
     position: center;
     size: cover;
   }
@@ -31,9 +30,17 @@
   background-image: url("../../assets/bgintro-resources.jpg");
 }
 
-#intro__books{
+#intro__books, #intro__designBooks,#intro__pages{
   background-image: url("../../assets/bgintro-books.jpg");
 }
+
+
+#intro__construction{
+  background-image: url("../../assets/bgintro-404.jpg");
+  height: 100vh;
+  
+}
+
 .intro__box {
   @include abs.flex(center, center, column, nowrap);
   text-align: center;
@@ -79,10 +86,11 @@
 }
 
 .intro_botton {
-  background: abs.color(abs.$primaryColor, "base");
+  background: abs.color(abs.$primaryColor, "base"); 
   @include abs.flex(center, center, row, nowrap);
   width: 120px;
   height: 30px;
+  margin-top: 1em;
   justify-self: center;
   text-align: center;
   border-radius: 20px;
@@ -92,10 +100,18 @@
   -o-border-radius: 20px;
 }
 .intro__enlance {
-  color: abs.color(abs.$secodaryColor, "lines");
+  color: abs.color(abs.$secodaryColor, "base");
   &:hover {
     color: abs.color(abs.$secodaryColor, "base");
   }
+}
+
+.intro__contador{
+  color: abs.color(abs.$primaryColor, "base");
+  font-size: abs.size("s");
+  margin-top:  5em;
+
+
 }
 
 .search {

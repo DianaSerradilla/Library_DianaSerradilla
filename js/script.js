@@ -3,10 +3,14 @@ const navUl = document.getElementById("nav-ul");
 const body = document.getElementById("body")
 
 
+
+
 hamburger.addEventListener('click', () => {
   navUl.classList.toggle('show');
   body.classList.toggle('bodyShow')
 });
+
+
 
 function Time() {
   var actualizarHora = function () {
@@ -15,10 +19,6 @@ function Time() {
       dia = fecha.getDate(),
       mes = fecha.getMonth(),
       year = fecha.getFullYear();
-
-
-
-
     var pDia = document.getElementById('dia'),
       pMes = document.getElementById('mes'),
       pYear = document.getElementById('year');
@@ -27,10 +27,6 @@ function Time() {
     var meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
     pMes.textContent = meses[mes];
     pYear.textContent = year;
-
-
-
-
   }
 
   actualizarHora();

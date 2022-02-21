@@ -6,15 +6,13 @@
     <meta name="author" content="Diana Serradilla" />
     <meta name="copyright" content=" Copyright. All Rights Reserved Designed by DianaSerradilla" />
     <meta name="description"
-        content="Library es una web pensada especializamente para la organización personal de recursos. También es una colección de maquetas, mockups, ilustraciones, libros, snipets, templates, resúmes y mucho más." />
+        content="Con Library podras gestionar toda la organizacion de tus recursos personales, podras encontrar tus snipets de forma facil, herramientas, mockups, libros, templates y mucho más." />
     <meta name="keywords"
-        content="Library, Libreria, recursos, gráficos, frontend, mokcups, Photoshop,Illustrator,HTML,CSS,JS,Bootstrp,Backend,edicion, themes, programacion, codigo">
+        content="Library, libreria, recursos, gráficos, FrontEnd, mokcups, Photoshop, Illustrator, After Effects, Lightroom, 3D, modelado, Blender, HTML, CSS, JavaScript, Bootstrp, Angular, React, Interfaces, Fuentes, Backend, edicion, video, themes, programacion, codigo, snipets">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library | Diana Serradilla</title>
-
-
     <!-- --------------Css Vanilla----------- -->
     <link rel="stylesheet" href="css/style1.css">
     <!-- --------------Icons----------- -->
@@ -40,24 +38,18 @@
     <!-- --------------Animaciones----------- -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-
 </head>
 
 <body id="body" class="body">
     <!-- ------colocados todos los alt en las imagenes------ -->
-
     <div class="father__container">
+
         <!-- ----------------Nav init---------------- -->
-
-        <header id="header">
+        <header id="header" class="animate__animated animate__fadeIn">
             <nav>
-
-
                 <a href="index.html">
                     <div id="logo"> </div>
-
                 </a>
-
                 <button class=" menu"
                     onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
                     aria-label="Main Menu" id="hamburger">
@@ -77,6 +69,7 @@
                     <li><a href="./pages/education.html">Education Channels</a></li>
                     <li><a href="./pages/resources.html">Resources</a></li>
                     <li><a href="./pages/books.html">Books</a></li>
+                    <li><a href="./pages/indexBT.html">Versión BT</a></li>
                 </ul>
             </nav>
             <div class="lineH"></div>
@@ -113,27 +106,27 @@
 
         <!-- ----------------Main End---------------- -->
         <!-- ----------------Collections init---------------- -->
-        <section class="inner">
+        <section class="inner ">
             <div class="lineH lineH-s" id="lineA"></div>
 
             <div class="container__text">
-                <div class="inner__title animate__animated animate__fadeInLeftBig">
+                <div class="inner__title animate__animated animate__fadeIn">
                     <a href="pages/collections.html">COLLECTIONS</a>
                 </div>
-                <div class="inner__description">
+                <div class="inner__description animate__animated animate__fadeIn">
                     Here you will find the largest number of reusable code snipets, as well as complete templates,
                     developed in different
                     technologies.
 
                 </div>
-                <a href="pages/collections.html" class="button">
+                <a href="pages/collections.html" class="button animate__animated animate__fadeIn">
                     <div>View all</div>
                     <div>
-                        <img src="/assets/arrow.svg" alt="arrow">
+                        <img src="assets/arrow.svg" alt="arrow">
                     </div>
                 </a>
             </div>
-            <div class="inner__cards--container animate__animated animate__fadeInRightBig">
+            <div class="inner__cards--container animate__animated animate__fadeIn">
                 <ul class="inner__cards--ul">
                     <li>
                         <figure>
@@ -173,7 +166,7 @@
                                 <h2>404 page illustration</h2>
                             </div>
                             <div>
-                                <p>Update 17 days ago</p>
+                                <p>Update 1 month</p>
                             </div>
                         </div>
 
@@ -187,7 +180,7 @@
                                 <h2>Search 3D</h2>
                             </div>
                             <div>
-                                <p>Update 3 months </p>
+                                <p>Update 1 month </p>
 
                             </div>
                         </div>
@@ -203,24 +196,24 @@
             <!-- ----------------Education init---------------- -->
 
             <div class="container__text">
-                <div class="inner__title animate__animated animate__fadeInLeftBig">
+                <div class="inner__title animate__animated animate__fadeIn">
                     <a href="pages/education.html">EDUCATION CHANNELS</a>
                 </div>
-                <div class="inner__description">
+                <div class="inner__description animate__animated animate__fadeIn">
                     The most complete collection of educational channels, both free and paid. You will have all kinds of
                     courses within
                     reach of a single click.
 
                 </div>
-                <a href="pages/collections.html" class="button">
+                <a href="pages/education.html" class="button animate__animated animate__fadeIn">
                     <div>View all</div>
                     <div>
                         <img src="/assets/arrow.svg" alt="arrow">
                     </div>
                 </a>
             </div>
-            <div class="inner__cards--container animate__animated animate__fadeInRightBig">
-                <ul class="inner__cards--ul row d-flex justify-content-center flex-wrap align-items-center">
+            <div class="inner__cards--container animate__animated animate__fadeIn">
+                <ul class="inner__cards--ul">
                     <li>
                         <figure>
                             <a href="https://platzi.com/" target="_blank"><img src="assets/img-platzi.jpg"
@@ -296,25 +289,25 @@
             <!-- ----------------Books init---------------- -->
 
             <div class="container__text">
-                <div class="inner__title animate__animated animate__fadeInLeftBig">
+                <div class="inner__title animate__animated animate__fadeIn">
                     <a href="pages/books.html">BOOKS</a>
                 </div>
-                <div class="inner__description">
+                <div class="inner__description animate__animated animate__fadeIn">
                     The most complete digital library. You will find all the books in different formats, as well as
                     websites of other
                     libraries.
 
 
                 </div>
-                <a href="pages/collections.html" class="button">
+                <a href="pages/books.html" class="button animate__animated animate__fadeIn">
                     <div>View all</div>
                     <div>
                         <img src="/assets/arrow.svg" alt="arrow">
                     </div>
                 </a>
             </div>
-            <div class="cards-container animate__animated animate__fadeInRightBig">
-                <ul class="inner__cards--ul row d-flex justify-content-center flex-wrap align-items-center">
+            <div class="cards-container animate__animated animate__fadeIn">
+                <ul class="inner__cards--ul">
                     <li>
 
                         <figure>
@@ -384,24 +377,24 @@
             <!-- ----------------Books end---------------- -->
             <!-- ----------------Resources init---------------- -->
             <div class="container__text">
-                <div class="inner__title animate__animated animate__fadeInLeftBig">
+                <div class="inner__title animate__animated animate__fadeIn">
                     <a href="pages/resources.html">RESOURCES PAGES</a>
                 </div>
-                <div class="inner__description">
+                <div class="inner__description animate__animated animate__fadeIn">
                     Digital resources of all kinds and tools to be able to work in different areas, categorized
                     according to type.
 
 
                 </div>
-                <a href="pages/collections.html" class="button">
+                <a href="pages/resources.html" class="button">
                     <div>View all</div>
                     <div>
                         <img src="/assets/arrow.svg" alt="arrow">
                     </div>
                 </a>
             </div>
-            <div class="cards-container animate__animated animate__fadeInRightBig">
-                <ul class="inner__cards--ul row d-flex justify-content-center flex-wrap align-items-center">
+            <div class="cards-container animate__animated animate__fadeIn">
+                <ul class="inner__cards--ul">
                     <li>
 
                         <figure>
@@ -476,7 +469,7 @@
         <!-- ----------------Resources end---------------- -->
 
         <!-- ----------------Contact init---------------- -->
-        <div class="container__contact animate__animated animate__fadeInUp ">
+        <div class="container__contact animate__animated animate__fadeIn ">
             <section id="contact">
                 <div class="contact__social">
                     <a href="https://www.instagram.com/laddy___di/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -510,48 +503,46 @@
 
         <!-- ----------------Footer init---------------- -->
 
-        <section>
-            <footer>
-                <div class="footerColumnL">
-                    <a href="#header">
-                        <img src="/assets/1080D.svg" alt="">
-                    </a>
-                    <p class="footerColumnL__text">Follow me</p>
-                    <div class="footerColumnL__social">
+        <footer class="animate__animated animate__fadeIn">
+            <div class="footerColumnL">
+                <a href="#header">
+                    <img src="/assets/1080D.svg" alt="logoLibrary">
+                </a>
+                <p class="footerColumnL__text">Follow me</p>
+                <div class="footerColumnL__social">
 
-                        <a href="https://www.instagram.com/laddy___di/" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://github.com/DianaSerradilla" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/diana-serradilla/" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.behance.net/serradilla7b58" target="_blank"><i
-                                class="fab fa-behance"></i></a>
-                    </div>
+                    <a href="https://www.instagram.com/laddy___di/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/DianaSerradilla" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/diana-serradilla/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.behance.net/serradilla7b58" target="_blank"><i class="fab fa-behance"></i></a>
                 </div>
-                <div class="lineVF"></div>
+            </div>
+            <div class="lineVF"></div>
 
-                <ul class="footerColumnM">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="./pages/collections.html">Collections</a></li>
-                    <li><a href="./pages/education.html">Education Channels</a></li>
-                    <li><a href="./pages/resources.html">Resources</a></li>
-                    <li><a href="./pages/books.html">Books</a></li>
-                </ul>
-                <div class="lineVF"></div>
+            <ul class="footerColumnM">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./pages/collections.html">Collections</a></li>
+                <li><a href="./pages/education.html">Education Channels</a></li>
+                <li><a href="./pages/resources.html">Resources</a></li>
+                <li><a href="./pages/books.html">Books</a></li>
+            </ul>
+            <div class="lineVF"></div>
 
-                <div class="footer-copy animate__animated animate__fadeInUp footerColumnR">
-                    <p>© Copyright. All Rights Reserved
-                        Designed by DianaSerradilla</p>
-                </div>
+            <div class="footer-copy footerColumnR">
+                <p>© Copyright. All Rights Reserved
+                    Designed by DianaSerradilla</p>
+            </div>
 
-            </footer>
-        </section>
+        </footer>
+
         <!-- ----------------Footer end---------------- -->
     </div>
 
     <script src="js/logo.js"></script>
     <script src="js/lupa.js"></script>
     <script src="js/script.js"></script>
+
 
 
 

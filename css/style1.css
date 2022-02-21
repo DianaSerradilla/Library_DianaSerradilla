@@ -23,8 +23,7 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
   background-color: #f2f2f2;
-  /* max-width: 100%; */
-  height: 100%;
+  height: 100vh;
 }
 
 .father__container {
@@ -525,8 +524,13 @@ nav {
   background-image: url("../../assets/bgintro-resources.jpg");
 }
 
-#intro__books {
+#intro__books, #intro__designBooks, #intro__pages {
   background-image: url("../../assets/bgintro-books.jpg");
+}
+
+#intro__construction {
+  background-image: url("../../assets/bgintro-404.jpg");
+  height: 100vh;
 }
 
 .intro__box {
@@ -591,6 +595,7 @@ nav {
   flex-wrap: nowrap;
   width: 120px;
   height: 30px;
+  margin-top: 1em;
   justify-self: center;
   text-align: center;
   border-radius: 20px;
@@ -601,10 +606,16 @@ nav {
 }
 
 .intro__enlance {
-  color: #d9d9d9;
+  color: #0d0d0d;
 }
 .intro__enlance:hover {
   color: #0d0d0d;
+}
+
+.intro__contador {
+  color: #f2f2f2;
+  font-size: 1em;
+  margin-top: 5em;
 }
 
 .search {
@@ -1030,6 +1041,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 48vh;
 }
 
 /*-----------------Card img education init -----------------*/
@@ -1073,6 +1085,7 @@ nav {
 /*-----------------Card img books init -----------------*/
 #inner_books {
   margin-top: 7em;
+  min-height: 50vh;
 }
 
 #inner_design {
@@ -1187,6 +1200,7 @@ nav {
 /*-----------------Card img resources init -----------------*/
 #inner__resources {
   margin-top: 10em;
+  min-height: 50vh;
 }
 
 #inner_tool {
@@ -1238,6 +1252,7 @@ nav {
 /*-----------------Card img books design init -----------------*/
 #inner__designBooks {
   margin-top: 6em;
+  min-height: 50vh;
 }
 
 #inner_how {
@@ -1674,7 +1689,7 @@ nav {
 footer {
   background-color: #f2f2f2;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -1682,7 +1697,7 @@ footer {
   width: 80%;
   /* -------------grid------------ */
   grid-area: footer;
-  margin: 0 10em 3em 10em;
+  margin: 0 auto;
   margin-bottom: 0;
 }
 
@@ -1735,8 +1750,7 @@ footer {
 }
 
 .footerColumnR {
-  width: 10em;
-  margin-right: 5em;
+  width: 15em;
   box-sizing: border-box;
 }
 .footerColumnR p {
@@ -1819,7 +1833,7 @@ footer {
   }
 
   .inner__description {
-    font-size: 1em;
+    font-size: 0.8em;
     width: auto;
     border: none;
   }
@@ -1910,7 +1924,7 @@ footer {
   }
 
   .intro__date {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .input {
@@ -1970,7 +1984,7 @@ footer {
   /*----------------contact end--------------*/
   /*----------------footer init--------------*/
   .footer-copy p {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
   }
 
   #lastLine {
@@ -2108,16 +2122,71 @@ footer {
     background-size: cover;
   }
 
-  .intro__title {
+  #intro__titleCollections {
+    font-size: 1em;
+    letter-spacing: 1em;
+  }
+
+  #intro__titleGR {
+    font-size: 1em;
+    letter-spacing: 1em;
+  }
+
+  #intro__contador {
+    margin-top: 1em;
+    font-size: 0.9em;
+  }
+
+  #intro__titleEducation {
+    font-size: 1.5em;
+    letter-spacing: 1em;
+    margin-left: 0.6em;
+  }
+
+  #intro__titleBC {
+    font-size: 0.9rem;
+    margin-bottom: 1em;
+  }
+
+  #intro__titleBGR {
+    font-size: 0.9rem;
+    margin-bottom: 1em;
+  }
+
+  #intro__educationBEC {
+    margin-bottom: 1em;
     font-size: 1rem;
   }
 
+  #intro__titleBEC {
+    font-size: 0.9rem;
+  }
+
+  #title__constructionB {
+    font-size: 1em;
+    letter-spacing: 0px;
+    margin-bottom: 0.5em;
+  }
+
+  #description__constructionBT {
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+  }
+
+  .intro__title {
+    font-size: 2rem;
+  }
+
   .intro__description {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .intro__date {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .fecha {
+    font-size: 0.9rem;
   }
 
   /*----------------main end--------------*/
@@ -2133,5 +2202,16 @@ footer {
   /*----------------404 end--------------*/
 }
 /*-----------------Responisve end -----------------*/
+.card__tittleMain {
+  color: #0d0d0d;
+  font-size: 1.4em;
+}
+.card__tittleMain:hover {
+  color: #5f5f5f;
+}
+
+.cardBT {
+  width: 18em;
+}
 
 /*# sourceMappingURL=style1.css.map */

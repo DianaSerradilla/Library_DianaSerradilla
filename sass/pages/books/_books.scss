@@ -2,7 +2,9 @@
 
 /*-----------------Card img books init -----------------*/
 #inner_books {
-  margin-top: 7em;}
+  margin-top: 7em;
+  min-height: 50vh; 
+}
 
 #inner_design {
   @include abs.bgInner("../assets/img-design.jpg");
