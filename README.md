@@ -9,12 +9,9 @@
 <img src="https://i.postimg.cc/nLDCx6gy/cap1.png"/>
 <br/>
 <br/>
-
 <img src="https://i.postimg.cc/7ZLKKNdG/gif2.gif"/>
 <img src="https://i.postimg.cc/1ztbNSsd/gif1.gif"/>
-
 <br/>
-
 <br/>
 <br/>
 
