@@ -6,13 +6,13 @@
  <p>Library es un <strong>proyecto</strong> que consiste en unificar todos los recursos y poder plasmarlos visualmente. Se puede tener cargados en una base de datos o linkeados a tus repositorios.   </p>
 <br/>
 
-<img src="assets/cap1.png"/>
+<img src="https://i.postimg.cc/nLDCx6gy/cap1.png"/>
 <br/>
 <br/>
 
-<img src="assets/gif2.gif"/>
-<img src="assets/gif1.gif"/>
-<img src="assets/gif3.gif"/>
+<img src="https://i.postimg.cc/7ZLKKNdG/gif2.gif"/>
+<img src="https://i.postimg.cc/1ztbNSsd/gif1.gif"/>
+
 <br/>
 
 <br/>
